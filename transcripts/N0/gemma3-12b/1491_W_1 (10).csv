@@ -1,0 +1,10 @@
+photo,numero,nom,prenoms,profession,date_naissance,lieu_naissance,departement_naissance,pays,etat_civil,admis_au_titre_de,venant_de,religion,adresse,categorie_medicale,date_entree,date_sortie,nb_journees,observations
+1491_W_1 (10),1352,Petreau,Marie,employée,10/08/1898,Sainte-Marie,Haute-Marne,France,C,S.N.M.,Sainte-Marie,C,"Sainte Marie, 25",I,16/11/35,28/11/35,12,amélioration notable
+1491_W_1 (10),1353,Besson,Fernand,ouvrier,15/08/1906,St. Chamond,Loire,France,M,A.R.M.,St. Chamond,C,"St. Chamond, 14",J,23/11/35,16/12/35,22,amélioration notable
+1491_W_1 (10),1354,Guerin,Germaine,sans profession,27/08/1911,St. Etienne,Loire,France,C,S.N.M.,St. Etienne,C,"St. Etienne, 25",K,24/11/35,17/12/35,23,état stationnaire
+1491_W_1 (10),1355,Moreau,Suzanne,sans profession,12/08/1914,Lyon,Rhône,France,C,S.N.M.,Lyon,C,"Lyon, 12",L,25/11/35,19/12/35,24,amélioration lente
+1491_W_1 (10),1356,Durand,Robert,employé,03/08/1907,St. Chamond,Loire,France,M,A.R.M.,St. Chamond,C,"St. Chamond, 10",J,26/11/35,22/12/35,26,amélioration modérée
+1491_W_1 (10),1357,Lefevre,Jeanne,sans profession,18/08/1912,Roanne,Loire,France,C,S.N.M.,Roanne,C,"Roanne, 12",K,27/11/35,20/12/35,24,état stationnaire
+1491_W_1 (10),1358,Roux,Marcel,mineur,20/08/1905,Montbrison,Loire,France,M,A.R.M.,Montbrison,C,"Montbrison, 18",J,28/11/35,23/12/35,25,amélioration modérée
+1491_W_1 (10),1359,Vincent,Elise,sans profession,05/08/1910,St. Etienne,Loire,France,C,S.N.M.,St. Etienne,C,"St. Etienne, 14",L,29/11/35,21/12/35,22,amélioration lente
+1491_W_1 (10),1360,Lambert,Louis,ouvrier,14/08/1902,Lyon,Rhône,France,M,A.R.M.,Lyon,C,"Lyon, 22",J,30/11/35,24/12/35,24,amélioration notable

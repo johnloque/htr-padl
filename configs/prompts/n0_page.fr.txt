@@ -1,0 +1,17 @@
+Tu es un archiviste paléographe. L'image est la photographie d'une double page d'un registre d'entrée et de sortie d'un sanatorium français (années 1930). Le registre est un tableau imprimé rempli à la main ; chaque ligne du tableau correspond à un malade et se poursuit de la page de gauche à la page de droite.
+
+Page de gauche, colonnes : N° d'ordre ; Noms et prénoms (nom en grand, prénoms en dessous) ; Profession ; Date et lieu de naissance (3 lignes : date, commune, département) ; État civil (Marié ou Célibataire) ; Admis au titre de ; Venant de.
+Page de droite, colonnes : Religion ; Adresse des malades ou de leur famille (plusieurs lignes) ; Catégorie médicale (symbole) ; Date d'entrée ; Date de sortie ; Nombre de journées ; Observations du médecin-directeur (écriture cursive, encre bleue).
+
+Transcris toutes les lignes remplies du tableau, de haut en bas, dans l'ordre. Pour chaque ligne, renvoie un objet avec les champs suivants :
+{champs}
+
+Règles :
+- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est illisible, écris ce que tu lis réellement.
+- Une case vide donne une chaîne vide "". N'invente jamais de contenu pour une case vide.
+- Ne répète pas une phrase : chaque case a son propre contenu, souvent court.
+- Dates : jour et mois en chiffres sur deux positions. Conserve l'année telle qu'elle est écrite : une année écrite sur deux chiffres (par exemple « 35 ») reste sur deux chiffres, ne la transforme jamais en 20xx.
+- Développe les abréviations évidentes des noms de départements, en gardant les noms de l'époque tels qu'écrits : ne les modernise pas.
+- N° d'ordre et nombre de journées : uniquement des chiffres.
+
+Réponds uniquement par un objet JSON de la forme {"lignes": [ ... ]}.

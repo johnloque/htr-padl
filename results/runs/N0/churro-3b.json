@@ -1,0 +1,317 @@
+{
+  "strategy": "N0",
+  "model": "churro-3b",
+  "config": {
+    "strategy": "N0",
+    "model": {
+      "name": "churro-3b",
+      "backend": "ollama",
+      "id": "hf.co/mradermacher/churro-3B-GGUF:Q8_0",
+      "host": "http://localhost:11434",
+      "host_env": "OLLAMA_HOST",
+      "timeout_s": 1800,
+      "extra": {
+        "keep_alive": "30m"
+      }
+    },
+    "prompt_file": "/Users/michel/Dev/htr-test-julie/configs/prompts/n0_page.fr.txt",
+    "json_schema": true,
+    "image": {
+      "max_side": 2048,
+      "jpeg_quality": 90
+    },
+    "inference": {
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.9,
+      "repeat_penalty": 1.05,
+      "num_ctx": 16384,
+      "num_predict": 8192,
+      "seed": 42
+    },
+    "_path": "configs/N0/churro-3b.yaml"
+  },
+  "client": {
+    "backend": "ollama",
+    "model_id": "hf.co/mradermacher/churro-3B-GGUF:Q8_0",
+    "host": "http://localhost:11434",
+    "ollama_version": "0.40.13",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2vl",
+      "families": [
+        "qwen2vl"
+      ],
+      "parameter_size": "3.09B",
+      "quantization_level": "Q8_0"
+    },
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "digest": "782efb5447cee3c10303036af639f9ca1ed373a48331093e22d41c88e9bad197",
+    "size": 4133245493
+  },
+  "git_commit": "386b3cdbcd532140ed75cf38afedaf0d8e2d3812-dirty",
+  "python": "3.12.13",
+  "platform": "macOS-15.4.1-arm64-arm-64bit",
+  "started": "2026-11-13T01:46:18",
+  "input": "gold/photos",
+  "photos": [
+    {
+      "photo": "1491_W_1 (1)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 170.09,
+      "cached": false,
+      "calls": 1,
+      "model_s": 169.88,
+      "prompt_tokens": 4957,
+      "output_tokens": 4100,
+      "gen_s": 136.52,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (2)",
+      "n_rows": 3,
+      "json_valid": false,
+      "error": null,
+      "wall_s": 318.97,
+      "cached": false,
+      "calls": 1,
+      "model_s": 318.76,
+      "prompt_tokens": 4957,
+      "output_tokens": 8192,
+      "gen_s": 290.47,
+      "done_reasons": [
+        "length"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (4)",
+      "n_rows": 1,
+      "json_valid": false,
+      "error": null,
+      "wall_s": 319.96,
+      "cached": false,
+      "calls": 1,
+      "model_s": 319.76,
+      "prompt_tokens": 4957,
+      "output_tokens": 8192,
+      "gen_s": 291.08,
+      "done_reasons": [
+        "length"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (5)",
+      "n_rows": 6,
+      "json_valid": false,
+      "error": null,
+      "wall_s": 320.7,
+      "cached": false,
+      "calls": 1,
+      "model_s": 320.49,
+      "prompt_tokens": 4957,
+      "output_tokens": 8192,
+      "gen_s": 291.68,
+      "done_reasons": [
+        "length"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (6)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 112.5,
+      "cached": false,
+      "calls": 1,
+      "model_s": 112.29,
+      "prompt_tokens": 4957,
+      "output_tokens": 2578,
+      "gen_s": 83.3,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (7)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 112.84,
+      "cached": false,
+      "calls": 1,
+      "model_s": 112.62,
+      "prompt_tokens": 4957,
+      "output_tokens": 2587,
+      "gen_s": 83.68,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (8)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 112.46,
+      "cached": false,
+      "calls": 1,
+      "model_s": 112.25,
+      "prompt_tokens": 4957,
+      "output_tokens": 2580,
+      "gen_s": 83.42,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (9)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 111.17,
+      "cached": false,
+      "calls": 1,
+      "model_s": 110.96,
+      "prompt_tokens": 4957,
+      "output_tokens": 2534,
+      "gen_s": 82.04,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (10)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 112.87,
+      "cached": false,
+      "calls": 1,
+      "model_s": 112.66,
+      "prompt_tokens": 4957,
+      "output_tokens": 2586,
+      "gen_s": 83.76,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (11)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 115.21,
+      "cached": false,
+      "calls": 1,
+      "model_s": 114.98,
+      "prompt_tokens": 4957,
+      "output_tokens": 2664,
+      "gen_s": 86.09,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (12)",
+      "n_rows": 4,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 59.84,
+      "cached": false,
+      "calls": 1,
+      "model_s": 59.63,
+      "prompt_tokens": 4957,
+      "output_tokens": 981,
+      "gen_s": 30.86,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (13)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 115.06,
+      "cached": false,
+      "calls": 1,
+      "model_s": 114.85,
+      "prompt_tokens": 4957,
+      "output_tokens": 2659,
+      "gen_s": 85.99,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (14)",
+      "n_rows": 3,
+      "json_valid": false,
+      "error": null,
+      "wall_s": 319.42,
+      "cached": false,
+      "calls": 1,
+      "model_s": 319.21,
+      "prompt_tokens": 4957,
+      "output_tokens": 8192,
+      "gen_s": 290.22,
+      "done_reasons": [
+        "length"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    },
+    {
+      "photo": "1491_W_1 (15)",
+      "n_rows": 10,
+      "json_valid": true,
+      "error": null,
+      "wall_s": 114.38,
+      "cached": false,
+      "calls": 1,
+      "model_s": 114.16,
+      "prompt_tokens": 4957,
+      "output_tokens": 2636,
+      "gen_s": 85.19,
+      "done_reasons": [
+        "stop"
+      ],
+      "warnings": [],
+      "memory_bytes": 4400254811
+    }
+  ],
+  "finished": "2026-11-13T02:26:33",
+  "peak_memory_bytes": 4400254811
+}

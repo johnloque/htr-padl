@@ -1,0 +1,24 @@
+# N0 — page entière, un seul appel. Qwen3-VL 8B, variante -instruct (la variante avec réflexion boucle)
+strategy: N0
+model:
+  name: qwen3-vl-8b                 # dossier de sortie : transcripts/N0/qwen3-vl-8b/
+  backend: ollama             # ollama | openai (vLLM, llama.cpp server…)
+  id: "qwen3-vl:8b-instruct"
+  host: http://localhost:11434
+  host_env: OLLAMA_HOST       # prioritaire si définie (ex. Docker -> host.docker.internal)
+  timeout_s: 1800
+  extra:
+    keep_alive: 30m
+prompt_file: configs/prompts/n0_page.fr.txt
+json_schema: true             # sortie JSON contrainte par le schéma (src/htr/schema.py)
+image:
+  max_side: 2048              # côté max après redimensionnement (photo d'origine 4000×3000)
+  jpeg_quality: 90
+inference:                    # options passées telles quelles au backend
+  temperature: 0.3
+  top_k: 20
+  top_p: 0.9
+  repeat_penalty: 1.05
+  num_ctx: 16384
+  num_predict: 8192           # coupe les boucles
+  seed: 42

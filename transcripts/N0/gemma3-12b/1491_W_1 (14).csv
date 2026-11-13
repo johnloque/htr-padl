@@ -1,0 +1,8 @@
+photo,numero,nom,prenoms,profession,date_naissance,lieu_naissance,departement_naissance,pays,etat_civil,admis_au_titre_de,venant_de,religion,adresse,categorie_medicale,date_entree,date_sortie,nb_journees,observations
+1491_W_1 (14),356,Boursier,Jean,Journaliste,15/03/1898,Laval,Mayenne,France,C,S.R.M.,Paris,I,"Lieu dit le Moulin, Laval (Mayenne)",O,31/07/35,12/08/35,12,"Affections pulmonaires, état général bon."
+1491_W_1 (14),357,Lescuyer,Germaine,Sans,12/08/1896,Rouen,Seine Inférieure,France,C,S.R.M.,Paris,P,"Madame V. Lescuyer, 12 rue de la Paix, Paris.",C,31/07/35,05/08/35,5,"Troubles nerveux, état général bon."
+1491_W_1 (14),358,Marchand,Albert,Comptable,26/09/1893,Paris,,France,M,S.R.M.,Paris,P,"Madame Marchand, 15 rue de la Victoire, Paris.",C,31/07/35,16/08/35,16,"Toux, état général bon."
+1491_W_1 (14),359,Boutin,Stanislas,Sans,18/12/1887,Brest,Finistère,France,C,S.R.M.,Brest,P,"Madame Boutin, 12 rue de la Paix, Brest.",A,31/07/35,14/08/35,14,"Toux, état général bon."
+1491_W_1 (14),360,Courcier,Louise,Sans,25/11/1897,Paris,,France,C,S.R.M.,Paris,P,"Madame Courcier, 12 rue de la Paix, Paris.",C,31/07/35,18/08/35,18,"Toux, état général bon."
+1491_W_1 (14),361,Lefèvre,Eugène,Employé,10/05/1892,Rouen,Seine Inférieure,France,M,S.R.M.,Paris,P,"Madame Lefèvre, 12 rue de la Paix, Paris.",A,31/07/35,20/08/35,20,"Toux, état général bon."
+1491_W_1 (14),362,Dubois,Henri,Sans,17/08/1901,Lyon,Rhône,France,C,S.R.M.,Lyon,P,"Madame Dubois, 12 rue de la Paix, Lyon.",A,31/07/35,22/08/35,22,"Toux, état général bon."

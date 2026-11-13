@@ -1,0 +1,57 @@
+# Segmentation des doubles pages en pages, colonnes, lignes et cellules (README §4).
+# Les longueurs sont exprimées à l'échelle de travail (`work_scale` × photo d'origine).
+work_scale: 0.5
+
+binarization:
+  sauvola_window: 31
+  sauvola_k: 0.15
+
+gutter:
+  search_band: [0.3, 0.7]     # fraction de la largeur où chercher la reliure
+  coverage_band: [0.15, 0.9]  # fraction de la hauteur utilisée pour le profil
+  offset_frac: 0.012          # écart de part et d'autre pour comparer les profils de traits
+  overlap_frac: 0.012         # les pages découpées débordent un peu sur la reliure
+  refine_frac: 0.03           # recalage sur l'ombre de la pliure à ± cette fraction de largeur
+
+lines:
+  h_open_len: 40              # noyau d'ouverture horizontal (assez long pour ignorer l'écriture)
+  v_open_len: 20              # noyau vertical plus court : tolère la pente due à la perspective (≈ 0,1)
+  close_len: 25               # comble les petites interruptions d'un trait
+  min_h_frac: 0.4             # un séparateur horizontal couvre ≥ 40 % de la largeur de la page
+  min_v_crossings: 4          # … et est croisé par au moins 4 traits verticaux
+
+table:
+  columns_per_page: 7
+  warp_margin_frac: 0.015     # marge autour du tableau redressé
+  rows_per_page: 10
+  column_min_coverage: 0.5    # un trait de colonne couvre ≥ 50 % de la hauteur du corps du tableau
+  column_template_tol: 0.012  # écart toléré entre un trait détecté et le gabarit (fraction de largeur)
+  column_min_width_frac: 0.6  # le tableau occupe au moins 60 % de la largeur redressée
+  column_max_missing: 2       # traits de colonnes non vus (placés d'après le gabarit) tolérés
+  row_min_coverage: 0.5       # un séparateur est marqué sur ≥ 50 % de son chemin dans CHAQUE colonne
+  row_blackhat_px: 9          # hauteur de l'élément du black-hat (traits plus fins que cela)
+  row_on_factor: 3.0          # « trait présent » : réponse > facteur × médiane de la page
+  row_dp_step_px: 4           # pas horizontal du suivi de trait
+  row_dp_penalty: 0.5         # pénalité par pixel de déplacement vertical
+  row_header_min_frac: 0.3    # hauteur minimale de l'en-tête au-dessus de la 1re ligne (fraction du pas)
+  row_gap_tol: 0.25           # écart toléré entre un pas et le pas médian de sa colonne
+  row_max_fixes: 2            # recalages tolérés par page avant de la signaler
+  pair_max_rel_diff: 0.04     # écart max (fraction de hauteur) entre séparateurs gauche et droite
+  row_pitch_cv_max: 0.2       # régularité du pas (coefficient de variation max)
+  merge_px: 8                 # fusion des détections proches
+
+# Positions relatives des 8 traits de colonnes du formulaire imprimé (mesurées sur 6 pages bien segmentées,
+# écart-type < 0,006).
+columns_template:
+  left: [0.0, 0.069, 0.288, 0.393, 0.59, 0.655, 0.833, 1.0]
+  right: [0.0, 0.067, 0.34, 0.405, 0.513, 0.625, 0.706, 1.0]
+
+columns:
+  left: [numero, noms_prenoms, profession, naissance, etat_civil, admis_au_titre_de, venant_de]
+  right: [religion, adresse, categorie_medicale, date_entree, date_sortie, nb_journees, observations]
+
+export:
+  scale: 1.0                  # les crops sont extraits de la photo d'origine (échelle 1)
+  row_pad_frac: 0.08          # marge verticale ajoutée autour d'une ligne (fraction du pas)
+  cell_pad_frac: 0.03         # marge horizontale autour d'une cellule (fraction de la largeur de colonne)
+  jpeg_quality: 92

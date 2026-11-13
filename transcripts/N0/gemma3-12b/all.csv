@@ -1,0 +1,123 @@
+photo,numero,nom,prenoms,profession,date_naissance,lieu_naissance,departement_naissance,pays,etat_civil,admis_au_titre_de,venant_de,religion,adresse,categorie_medicale,date_entree,date_sortie,nb_journees,observations
+1491_W_1 (1),151,Racine,Marie,Instituteur,27/01/1898,Sainte-Sigismonde,Hte. Rhin,France,C,A. M. G.,Sainte-Sigismonde,,,P,17/11/35,29/11/35,12,Présente une névrose d'angoisse. Idée suicidaire. A suivre.
+1491_W_1 (1),152,Thomas,Joseph,Employé,18/06/1903,Galata,,Turquie,C,A. M. G.,Galata,,,R,19/11/35,27/11/35,8,Troubles de l'humeur. Idées dépressives. A suivre.
+1491_W_1 (1),153,Messiance,Marie,Instituteur,28/06/1907,St. Amand,Nord,France,C,A. M. G.,St. Amand,,,S,21/11/35,04/12/35,12,Troubles anxieux. Insomnie. A suivre.
+1491_W_1 (1),154,Dubois,Georges,Comptable,10/03/1909,Indre,Indre,France,C,A. M. G.,Indre,,,T,22/11/35,01/12/35,9,Troubles de la personnalité. Agressivité. A suivre.
+1491_W_1 (1),155,Moreau,Louise,Sans profession,22/06/1913,St. Pierre,Hte. Vienne,France,C,A. M. G.,St. Pierre,,,U,23/11/35,01/12/35,8,Troubles anxieux. Hystérie. A suivre.
+1491_W_1 (1),156,Salle,Jean,Employé,15/09/1913,St. Georges,Loiret,France,C,A. M. G.,St. Georges,,,V,24/11/35,02/12/35,7,Troubles de la personnalité. Agressivité. A suivre.
+1491_W_1 (1),157,Lecoeur,Marie,Sans profession,10/02/1914,St. Martin,Loiret,France,C,A. M. G.,St. Martin,,,W,25/11/35,01/12/35,6,Troubles anxieux. Hystérie. A suivre.
+1491_W_1 (1),158,Boucher,Raymond,Employé,20/04/1916,St. Pierre,Loiret,France,C,A. M. G.,St. Pierre,,,X,26/11/35,02/12/35,6,Troubles de la personnalité. Agressivité. A suivre.
+1491_W_1 (2),355,Gisbert,Jean,Industriel,27/04/1888,Épernay,M.,France,M,A. M. G.,Son domicile,C,14 avenue Wagram Paris XVI,B,15/10/35,29/11/35,46,Amélioration lente. Nécessite un repos prolongé.
+1491_W_1 (2),356,Grundel,Edouard,Industriel,18/09/1874,Strasbourg,B.,France,M,"Office d’Hypothèque, Société à Responsabilité",Son domicile,I,25157 St. Dié,A,19/10/35,24/11/35,36,Amélioration. Nécessite un suivi régulier.
+1491_W_1 (2),357,De Roland,Georges,Ingénieur,24/08/1896,Nancy,M.,France,M,A. M. G.,Son domicile,C,12 rue de la Paix Paris II,B,20/10/35,14/11/35,25,État général bon. Nécessite un suivi régulier.
+1491_W_1 (2),358,Garnier,Louis,Comptable,27/04/1893,Paris,P.,France,M,Société,Son domicile,C,10 rue de la Montagne Lyon IV,B,23/10/35,17/11/35,25,Amélioration. Nécessite un suivi régulier.
+1491_W_1 (2),359,Richelot,Simone,Sans profession,12/08/1914,Paris,P.,France,C,Son père,Son domicile,C,12 rue de la Harpe Paris XVI,A,24/10/35,18/11/35,25,Bonne évolution. Nécessite un suivi régulier.
+1491_W_1 (2),360,Giraud,Jean,Employé,15/02/1904,Lyon,R.,France,M,A. M. G.,Son domicile,C,14 rue de la Pompe Paris XVI,B,25/10/35,19/11/35,25,Amélioration. Nécessite un suivi régulier.
+1491_W_1 (2),361,Boucher,Marcel,Commerçant,02/05/1879,Paris,P.,France,M,A. M. G.,Son domicile,C,12 rue de la Harpe Paris XVI,B,26/10/35,20/11/35,25,Amélioration. Nécessite un suivi régulier.
+1491_W_1 (2),362,Lemaire,Henri,Ingénieur,10/11/1897,Paris,P.,France,M,A. M. G.,Son domicile,C,12 rue de la Harpe Paris XVI,B,27/10/35,21/11/35,25,Amélioration. Nécessite un suivi régulier.
+1491_W_1 (4),1911,Castillou,Henriette,sans objet,15/03/1892,St. Palais,Basse Loire,France,C,A.M.G. Assurance,sans objet,P.,"14 Rue de la Paix, St. Palais (Basse Loire)",R,16/05/35,16/07/35,31,La malade souffre d'une névrose anxieuse. Elle est très impressionable et facilement angoissée. A suivre.
+1491_W_1 (4),1912,Gressière,Marie,sans objet,10/08/1896,St. Bonnet,Allier,France,C,A.M.G. Assurance,sans objet,P.,"15 Avenue des Lilas, St. Bonnet (Allier)",R,16/07/35,16/09/35,61,La malade présente une affection pulmonaire débutante. A suivre.
+1491_W_1 (4),1913,Duvivier,Louis,sans objet,20/06/1894,St. Georges,Allier,France,C,Mutuelle des Mineurs,sans objet,P.,"12 Rue de la Gare, St. Georges (Allier)",R,17/07/35,16/08/35,30,La malade souffre de troubles nerveux. A suivre.
+1491_W_1 (4),1914,Bousquet,Germaine,sans objet,18/11/1895,St. Sulpice,Haute Vienne,France,C,Mutuelle des Mineurs,sans objet,P.,"12 Rue de la Gare, St. Sulpice (Haute Vienne)",R,17/07/35,16/08/35,30,La malade souffre de troubles nerveux. A suivre.
+1491_W_1 (4),1915,Schneider,Alice,sans objet,20/10/1893,St. Amand,Nord,France,C,A.M.G. Assurance,sans objet,P.,"10 Rue de la République, St. Amand (Nord)",R,18/07/35,16/08/35,29,La malade souffre de troubles nerveux. A suivre.
+1491_W_1 (4),1916,Billaud,Jean,sans objet,05/03/1897,St. Georges,Haute Vienne,France,C,A.M.G. Assurance,sans objet,P.,"12 Rue de la Gare, St. Georges (Haute Vienne)",R,18/07/35,16/08/35,29,La malade souffre de troubles nerveux. A suivre.
+1491_W_1 (4),1917,Le Goff,Marie,sans objet,12/04/1892,St. Pierre,Finistère,France,C,A.M.G. Assurance,sans objet,P.,"14 Rue de la Paix, St. Pierre (Finistère)",R,19/07/35,16/08/35,28,La malade souffre de troubles nerveux. A suivre.
+1491_W_1 (4),1918,Roussel,Louis,sans objet,25/09/1896,St. Jacques,Loiret,France,C,A.M.G. Assurance,sans objet,P.,"15 Avenue des Lilas, St. Jacques (Loiret)",R,19/07/35,16/08/35,28,La malade souffre de troubles nerveux. A suivre.
+1491_W_1 (5),3106,ROUX,José,Employé,15/08/1898,St. Amand,Nord,France,C,S. N.,St. Amand,Luthérien,"St. Amand, Nord",R,20/11/35,14/12/35,26,Pneumonie grippale. Bon résultat du traitement.
+1491_W_1 (5),3107,Graslinette,Yvette,Sans profession,28/09/1911,A.P.I.C.,,France,C,S. N.,A.P.I.C.,Luthérien,"St. Amand, Nord",S,21/11/35,07/12/35,17,Troubles de l’humeur. Amélioration rapide.
+1491_W_1 (5),3108,Charbonnel,Germaine,Sans profession,27/09/1911,St. Pierre,Nord,France,C,A. M. S.,St. Pierre,Luthérien,"Caen, Normandie",S,21/11/35,18/12/35,28,Troubles de l’humeur. Amélioration lente.
+1491_W_1 (5),3109,Jacquelin,Simone,Sans profession,11/10/1911,St. Pierre,Nord,France,C,S. N.,St. Pierre,Luthérien,"Roubaix, Nord",R,21/11/35,19/12/35,29,Pneumonie grippale. Amélioration rapide.
+1491_W_1 (5),3110,Charbonnière,Jeannette,Sans profession,28/09/1909,St. Pierre,Nord,France,C,S. N.,St. Pierre,Luthérien,"Roubaix, Nord",R,21/11/35,24/12/35,34,Pneumonie grippale. Amélioration lente.
+1491_W_1 (5),3111,Lefevre,Robert,Employé,06/08/1907,St. Pierre,Nord,France,C,S. N.,St. Pierre,Luthérien,"Roubaix, Nord",R,21/11/35,24/12/35,34,Pneumonie grippale. Amélioration lente.
+1491_W_1 (5),3112,Dubois,Germaine,Sans profession,18/07/1912,St. Pierre,Nord,France,C,S. N.,St. Pierre,Luthérien,"Roubaix, Nord",R,21/11/35,24/12/35,34,Pneumonie grippale. Amélioration lente.
+1491_W_1 (5),3113,Lefevre,Jeannette,Sans profession,28/09/1912,St. Pierre,Nord,France,C,S. N.,St. Pierre,Luthérien,"Roubaix, Nord",R,21/11/35,24/12/35,34,Pneumonie grippale. Amélioration lente.
+1491_W_1 (5),3114,Dumont,Robert,Sans profession,15/06/1912,St. Pierre,Nord,France,C,S. N.,St. Pierre,Luthérien,"Roubaix, Nord",R,21/11/35,24/12/35,34,Pneumonie grippale. Amélioration lente.
+1491_W_1 (6),145,Kisel,Julien,Employé de banque,27/03/1907,St. Amand,N.,France,C,S. N. A. G.,St. Amand,Israélite,St. Amand,I,19/35,19/35,1,Phtisie débutante.
+1491_W_1 (6),146,Mathieu,Berthe,Sans,1/07/1897,Lille,N.,France,C,S. N. A. G.,Lille,Israélite,Lille,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (6),147,Marcin,Suzanne Marie,Sans,5/08/1912,Varsovie,,Pologne,C,S. N. A. G.,Varsovie,Israélite,Varsovie,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (6),148,Bonnefous,Marie,Sans,15/09/1913,St. Benoit,H.,France,C,S. N. A. G.,St. Benoit,Catholique,St. Benoit,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (6),149,David,Abraham,Comptable,23/08/1906,Kutno,,Pologne,C,S. N. A. G.,Kutno,Israélite,Kutno,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (6),150,Mazet,René,Employé de commerce,18/11/1911,St. Chamond,L.,France,C,S. N. A. G.,St. Chamond,Israélite,St. Chamond,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (6),151,Lévy,Maurice,Commerçant,20/04/1909,Paris,P.,France,C,S. N. A. G.,Paris,Israélite,Paris,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (6),152,Schlesinger,Robert,Sans,10/03/1914,Paris,P.,France,C,S. N. A. G.,Paris,Israélite,Paris,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (6),153,Kaufmann,Léo,Employé de banque,24/06/1908,Alès,C.,France,C,S. N. A. G.,Alès,Israélite,Alès,B,16/35,16/35,1,"Toux sèche, état général altéré."
+1491_W_1 (7),3512,Ferricheyre,Marguerite,Employée,10/08/1896,Vire,Calv.,France,C,S. de l’Assurance,Vire,C,Vire,P,15/11/35,24/11/35,10,Toux sèche.
+1491_W_1 (7),3513,Billard,Louise,Sans,27/09/1896,Montreuil,,France,C,S. de l’Assurance,Montreuil,C,Montreuil,O,18/11/35,16/12/35,29,Dyspnée.
+1491_W_1 (7),3514,Boussel,Maurice,Employé,20/07/1906,St. Amand,Nord,France,C,S. de l’Assurance,St. Amand,J,St. Amand,P,21/11/35,24/11/35,4,Toux sèche et expectoration.
+1491_W_1 (7),3515,Boucherias,Gisèle,Sans,18/06/1914,Rouen,Sen.,France,C,S. de l’Assurance,Rouen,C,Rouen,O,23/11/35,09/12/35,17,Anémie et état général altéré.
+1491_W_1 (7),3516,Desvilles,Bertrand,Sans,10/10/1914,St. Gratien,Val d’Oise,France,C,S. de l’Assurance,St. Gratien,C,St. Gratien,O,24/11/35,06/12/35,13,Toux grésillante.
+1491_W_1 (7),3517,Domagous,Lucie,Sans,11/08/1912,St. Chamond,Loire,France,C,S. de l’Assurance,St. Chamond,C,St. Chamond,O,25/11/35,18/12/35,24,"Toux sèche, dyspnée."
+1491_W_1 (7),3518,Garnier,Robert,Employé,05/02/1907,Lyon,Rhône,France,C,S. de l’Assurance,Lyon,C,Lyon,P,26/11/35,07/12/35,12,Toux et expectoration.
+1491_W_1 (7),3519,Guy,Jean,Sans,16/04/1912,Paris,,France,C,S. de l’Assurance,Paris,C,Paris,O,26/11/35,14/12/35,19,Toux sèche et dyspnée.
+1491_W_1 (7),3520,Cattelain,Germaine,Sans,18/09/1912,St. Amand,Nord,France,C,S. de l’Assurance,St. Amand,C,St. Amand,O,27/11/35,06/12/35,10,Toux et expectoration.
+1491_W_1 (8),191,Laborde,Joseph,Employé,27/03/1884,St. Pierre,Hte. Garonne,France,M,S. d'Assurance,St. Pierre,,,A,15/11/34,17/11/34,02,Pneumonie grippale.
+1491_W_1 (8),192,Rossignol,Marie,Mère au foyer,10/08/1887,St. Gaudens,Hte. Garonne,France,M,S. d'Assurance,St. Gaudens,,,B,17/11/34,19/11/34,02,Pneumonie grippale.
+1491_W_1 (8),193,Scott,Mary,Anglaise,12/06/1894,Londres,,Angleterre,C,Privé,Londres,,,A,18/11/34,20/11/34,02,Trouble digestif. Dépressive.
+1491_W_1 (8),194,Botte,Germaine,Sans profession,23/07/1916,St. Lary,Hte. Pyrenees,France,C,S. d'Assurance,St. Lary,,,B,19/11/34,21/11/34,02,Trouble digestif.
+1491_W_1 (8),195,Olivier,Fernand,Sans profession,14/08/1916,St. Gaudens,Hte. Garonne,France,C,S. d'Assurance,St. Gaudens,,,B,20/11/34,22/11/34,02,Trouble digestif. Anxiété.
+1491_W_1 (8),196,Girault,Henri,Sans profession,07/03/1918,St. Lary,Hte. Pyrenees,France,C,S. d'Assurance,St. Lary,,,B,21/11/34,23/11/34,02,Trouble digestif. Anxiété.
+1491_W_1 (8),197,Duchamp,Jean,Sans profession,25/08/1916,St. Gaudens,Hte. Garonne,France,C,S. d'Assurance,St. Gaudens,,,B,22/11/34,24/11/34,02,Trouble digestif.
+1491_W_1 (8),198,Fourquet,Louis,Sans profession,15/02/1917,St. Lary,Hte. Pyrenees,France,C,S. d'Assurance,St. Lary,,,B,23/11/34,25/11/34,02,Trouble digestif.
+1491_W_1 (8),199,Lalanne,Raymond,Sans profession,03/09/1918,St. Gaudens,Hte. Garonne,France,C,S. d'Assurance,St. Gaudens,,,B,24/11/34,26/11/34,02,Trouble digestif.
+1491_W_1 (8),200,Peyre,Paul,Sans profession,18/01/1916,St. Lary,Hte. Pyrenees,France,C,S. d'Assurance,St. Lary,,,B,25/11/34,27/11/34,02,Trouble digestif.
+1491_W_1 (9),1516,Corie,Jeanne,Mère,28/03/1894,St. Sulpice,Allier,France,C,S.M.P.,St. Sulpice,Catholique,"St. Sulpice et Rue du Moulin, St. Sulpice Allier",R,14/09/35,21/11/35,68,Affection du coeur.
+1491_W_1 (9),1517,Garnier,Louis,Employé,20/06/1893,St. Chamond,Loire,France,M,S.M.P.,St. Chamond,Catholique,"12 Rue de la Paix, St. Chamond Loire",O,05/10/35,16/11/35,42,Bronchite chronique.
+1491_W_1 (9),1518,Abadie,Marie,Mère,10/07/1892,St. Chamond,Loire,France,C,S.M.P.,St. Chamond,Catholique,"12 Rue de la Paix, St. Chamond Loire",B,16/10/35,14/11/35,29,Anémie.
+1491_W_1 (9),1519,Signorile,Joseph,Employé,18/06/1903,Rome,,Italie,C,S.M.P.,Paris,Catholique,"12 Rue de la Paix, Paris",A,23/10/35,07/11/35,15,Troubles de la digestion.
+1491_W_1 (9),1520,Duschel,Marie,Employée,15/08/1906,St. Chamond,Loire,France,C,S.M.P.,St. Chamond,Catholique,"12 Rue de la Paix, St. Chamond Loire",T,26/10/35,01/11/35,6,Troubles nerveux.
+1491_W_1 (9),1521,Caporilla,Jean,Ouvrier,03/09/1897,Turin,,Italie,M,S.M.P.,Paris,Catholique,"12 Rue de la Paix, Paris",W,27/10/35,04/11/35,8,Insomnie et troubles digestifs.
+1491_W_1 (9),1522,Stricha,Rosa,Mère,08/04/1903,Vienne,Vienne,France,C,S.M.P.,Vienne,Catholique,"12 Rue de la Paix, Vienne",B,29/10/35,17/11/35,19,Anémie.
+1491_W_1 (9),1523,Devaux,Robert,Employé,12/08/1907,St. Etienne,Loire,France,C,S.M.P.,St. Etienne,Catholique,"12 Rue de la Paix, St. Etienne Loire",O,31/10/35,14/11/35,14,Bronchite.
+1491_W_1 (9),1524,Dubois,Marie,Mère,05/03/1896,St. Chamond,Loire,France,C,S.M.P.,St. Chamond,Catholique,"12 Rue de la Paix, St. Chamond Loire",B,01/11/35,18/11/35,17,Anémie.
+1491_W_1 (10),1352,Petreau,Marie,employée,10/08/1898,Sainte-Marie,Haute-Marne,France,C,S.N.M.,Sainte-Marie,C,"Sainte Marie, 25",I,16/11/35,28/11/35,12,amélioration notable
+1491_W_1 (10),1353,Besson,Fernand,ouvrier,15/08/1906,St. Chamond,Loire,France,M,A.R.M.,St. Chamond,C,"St. Chamond, 14",J,23/11/35,16/12/35,22,amélioration notable
+1491_W_1 (10),1354,Guerin,Germaine,sans profession,27/08/1911,St. Etienne,Loire,France,C,S.N.M.,St. Etienne,C,"St. Etienne, 25",K,24/11/35,17/12/35,23,état stationnaire
+1491_W_1 (10),1355,Moreau,Suzanne,sans profession,12/08/1914,Lyon,Rhône,France,C,S.N.M.,Lyon,C,"Lyon, 12",L,25/11/35,19/12/35,24,amélioration lente
+1491_W_1 (10),1356,Durand,Robert,employé,03/08/1907,St. Chamond,Loire,France,M,A.R.M.,St. Chamond,C,"St. Chamond, 10",J,26/11/35,22/12/35,26,amélioration modérée
+1491_W_1 (10),1357,Lefevre,Jeanne,sans profession,18/08/1912,Roanne,Loire,France,C,S.N.M.,Roanne,C,"Roanne, 12",K,27/11/35,20/12/35,24,état stationnaire
+1491_W_1 (10),1358,Roux,Marcel,mineur,20/08/1905,Montbrison,Loire,France,M,A.R.M.,Montbrison,C,"Montbrison, 18",J,28/11/35,23/12/35,25,amélioration modérée
+1491_W_1 (10),1359,Vincent,Elise,sans profession,05/08/1910,St. Etienne,Loire,France,C,S.N.M.,St. Etienne,C,"St. Etienne, 14",L,29/11/35,21/12/35,22,amélioration lente
+1491_W_1 (10),1360,Lambert,Louis,ouvrier,14/08/1902,Lyon,Rhône,France,M,A.R.M.,Lyon,C,"Lyon, 22",J,30/11/35,24/12/35,24,amélioration notable
+1491_W_1 (11),131,Barville,,Employée,28/08/1896,St. Amand,Nord,France,C,S. de R.,St. Amand,Réformée,"Mme Barville, 15 rue de la Gare, St. Amand, N.",B,14/11/35,29/11/35,15,Toux sèche et irritative. Légère hypotension.
+1491_W_1 (11),132,Deschambes,Louis,Ouvrier métallurgiste,10/08/1897,Houdijon,Aisne,France,M,S. de R.,Houdijon,Catholique,"Mme Deschambes, 14 rue du Moulin, Houdijon, Aisne",B,16/11/35,28/11/35,12,Présente une bronchite. Difficultés respiratoires. Toux productive.
+1491_W_1 (11),133,Rioulet,,Mineur,5/08/1906,Bruay,Pas de Calais,France,C,S. de R.,Bruay,Catholique,"Mme Rioulet, 10 rue des Acacias, Bruay, Pas de Calais",B,17/11/35,26/11/35,9,Présente une trachéobronchite. Toux sèche et douloureuse.
+1491_W_1 (11),134,Craye,Marie,Employée,27/08/1916,Lille,Nord,France,C,S. de R.,Lille,Catholique,"Mlle Craye, 12 rue de la Paix, Lille, N.",B,18/11/35,24/11/35,6,Présente une rhinopharyngite aiguë.
+1491_W_1 (11),135,Delaville,,Employé,17/08/1906,Valenciennes,Nord,France,M,S. de R.,Valenciennes,Libre,"Mme Delaville, 3 rue du Commerce, Valenciennes, N.",B,19/11/35,25/11/35,6,Présente une bronchite chronique.
+1491_W_1 (11),136,Gaiton,,Ouvrier,10/09/1914,Caen,Calvados,France,C,S. de R.,Caen,Libre,"Mme Gaiton, 18 rue des Lilas, Caen, Calvados",B,20/11/35,27/11/35,7,Présente une pneumonie lobaire droite.
+1491_W_1 (11),137,Lefevre,Henri,Comptable,2/09/1898,Roubaix,Nord,France,M,S. de R.,Roubaix,Réformée,"Mme Lefevre, 22 rue de la République, Roubaix, N.",B,21/11/35,28/11/35,7,Présente une grippe avec complications pulmonaires.
+1491_W_1 (11),138,Dubois,,Employé de bureau,15/09/1902,Lille,Nord,France,C,S. de R.,Lille,Catholique,"Mme Dubois, 10 rue du Général Leclerc, Lille, N.",B,22/11/35,29/11/35,7,Présente une bronchite aiguë.
+1491_W_1 (11),139,Boulart,,Ouvrier,18/09/1912,Lens,Pas de Calais,France,C,S. de R.,Lens,Catholique,"Mme Boulart, 4 rue du Moulin, Lens, Pas de Calais",B,23/11/35,30/11/35,7,Présente une toux sèche et persistante.
+1491_W_1 (11),140,Lemaire,,Mineur,25/09/1908,Dunkerque,Nord,France,M,S. de R.,Dunkerque,Catholique,"Mme Lemaire, 1 rue des Halles, Dunkerque, N.",B,24/11/35,01/12/35,7,Présente une pneumoconiose débutante.
+1491_W_1 (12),358,Stehrypare,Marie,Employée d’usine,20/04/1898,Bainsville,Meurthe & Moselle,France,C,"A.M.G. - Bainsville, Meurthe & Moselle",Domicile,Catholique,"Bainsville, Meurthe & Moselle",X,14/05/35,28/05/35,14,"Bronchite chronique, légère toux."
+1491_W_1 (12),359,Dupuis,Jean,Ouvrier,10/08/1902,Lorient,Morbihan,France,M,"A.M.G. - Lorient, Morbihan",Domicile,Catholique,"Lorient, Morbihan",Y,16/05/35,29/05/35,13,"Tuberculose pulmonaire, débutée."
+1491_W_1 (12),360,Bigorne,Marguerite,Mère au foyer,15/08/1904,Brest,Finistère,France,C,"A.M.G. - Brest, Finistère",Domicile,Catholique,"Brest, Finistère",Z,18/05/35,29/05/35,11,"Grippe, convalescence."
+1491_W_1 (12),361,Guyard,Raymond,Boulanger,11/09/1905,St. Amand,Nord,France,C,"A.M.G. - St. Amand, Nord",Domicile,Catholique,"St. Amand, Nord",W,20/05/35,31/05/35,11,"Bronchite aiguë, forte toux."
+1491_W_1 (12),362,Lecornu,Fernand,Ouvrier,05/11/1908,Caen,Calvados,France,C,"A.M.G. - Caen, Calvados",Domicile,Catholique,"Caen, Calvados",V,22/05/35,01/06/35,9,"Toux grasse, essoufflement."
+1491_W_1 (12),363,Duverge,Louise,Sans profession,12/08/1910,St. Lo,Manche,France,C,"A.M.G. - St. Lo, Manche",Domicile,Catholique,"St. Lo, Manche",U,23/05/35,31/05/35,8,"Rhume, légère fièvre."
+1491_W_1 (12),364,Courtois,Robert,Employé de commerce,18/02/1912,Rouen,Seine Inférieure,France,C,"A.M.G. - Rouen, Seine Inférieure",Domicile,Catholique,"Rouen, Seine Inférieure",T,24/05/35,01/06/35,7,"Convalescence, faiblesse."
+1491_W_1 (12),365,Poirier,Jeanne,Sans profession,07/09/1914,Le Mans,Sarthe,France,C,"A.M.G. - Le Mans, Sarthe",Domicile,Catholique,"Le Mans, Sarthe",S,25/05/35,31/05/35,6,"Grippe, fatigue."
+1491_W_1 (13),1611,Grasnier,Louis,Employé,24/10/1897,Beauvais,Oise,France,C,A.M.G. / Oise,Domicile,Catholique,"Belle rue des Halles, 10/ Beauvais",U,14/11/35,26/11/35,12,Pneumonie lobaire droite.
+1491_W_1 (13),1612,Lefebvre,Jean,Ouvrier,05/08/1903,Creutzwald,Moselle,France,C,Compagnie des mines de Sarreguemines,Domicile,Catholique,12 rue de la Gare / Creutzwald,I,15/11/35,07/12/35,22,Bronchite chronique.
+1491_W_1 (13),1613,Bonneton,Marie,Mère de famille,27/09/1884,St. Dizier,Haute Marne,France,V,A.M.G. / Haute Marne,Domicile,Catholique,"Rue de la Gare, 17 / St. Dizier",P,16/11/35,29/11/35,13,Troubles fonctionnels.
+1491_W_1 (13),1614,Ruidon,Fernand,Employé,12/05/1914,St. Etienne,Loire,France,C,A.M.G. / Loire,Domicile,Catholique,18 rue de l'Eglise / St. Etienne,O,17/11/35,29/11/35,12,Asthme broncho-sphinctique.
+1491_W_1 (13),1615,Bonché,Germaine,Sans profession,20/03/1917,St. Chamond,Loire,France,C,A.M.G. / Loire,Domicile,Catholique,12 rue de la République / St. Chamond,P,18/11/35,04/12/35,16,Anémie.
+1491_W_1 (13),1616,Cussac,Louis,Ouvrier,07/04/1892,Montluçon,Allier,France,M,A.M.G. / Allier,Domicile,Catholique,14 rue du Commerce / Montluçon,I,19/11/35,28/11/35,9,Pneumonie.
+1491_W_1 (13),1617,Guérou,Marcel,Employé,03/05/1908,Vichy,Allier,France,C,A.M.G. / Allier,Domicile,Israélite,12 rue de la Paix / Vichy,U,20/11/35,29/11/35,9,Troubles nerveux.
+1491_W_1 (13),1618,Périer,Jean,Sans profession,09/07/1923,Riom,Puy de Dôme,France,C,A.M.G. / Puy de Dôme,Domicile,Catholique,10 rue des Halles / Riom,P,21/11/35,04/12/35,13,Anémie.
+1491_W_1 (14),356,Boursier,Jean,Journaliste,15/03/1898,Laval,Mayenne,France,C,S.R.M.,Paris,I,"Lieu dit le Moulin, Laval (Mayenne)",O,31/07/35,12/08/35,12,"Affections pulmonaires, état général bon."
+1491_W_1 (14),357,Lescuyer,Germaine,Sans,12/08/1896,Rouen,Seine Inférieure,France,C,S.R.M.,Paris,P,"Madame V. Lescuyer, 12 rue de la Paix, Paris.",C,31/07/35,05/08/35,5,"Troubles nerveux, état général bon."
+1491_W_1 (14),358,Marchand,Albert,Comptable,26/09/1893,Paris,,France,M,S.R.M.,Paris,P,"Madame Marchand, 15 rue de la Victoire, Paris.",C,31/07/35,16/08/35,16,"Toux, état général bon."
+1491_W_1 (14),359,Boutin,Stanislas,Sans,18/12/1887,Brest,Finistère,France,C,S.R.M.,Brest,P,"Madame Boutin, 12 rue de la Paix, Brest.",A,31/07/35,14/08/35,14,"Toux, état général bon."
+1491_W_1 (14),360,Courcier,Louise,Sans,25/11/1897,Paris,,France,C,S.R.M.,Paris,P,"Madame Courcier, 12 rue de la Paix, Paris.",C,31/07/35,18/08/35,18,"Toux, état général bon."
+1491_W_1 (14),361,Lefèvre,Eugène,Employé,10/05/1892,Rouen,Seine Inférieure,France,M,S.R.M.,Paris,P,"Madame Lefèvre, 12 rue de la Paix, Paris.",A,31/07/35,20/08/35,20,"Toux, état général bon."
+1491_W_1 (14),362,Dubois,Henri,Sans,17/08/1901,Lyon,Rhône,France,C,S.R.M.,Lyon,P,"Madame Dubois, 12 rue de la Paix, Lyon.",A,31/07/35,22/08/35,22,"Toux, état général bon."
+1491_W_1 (15),181,Boucherel,Fernande,Employée,27/03/1910,Saint-Nazaire,Loire Inf.,France,C,S.M.P.,Domicile,C,"Saint-Nazaire, 43, rue du Commerce",A,16/10/35,29/10/35,13,Bronchite chronique.
+1491_W_1 (15),202,Brunel,Germaine,Sans profession,15/03/1907,Le Pont-de-Roide,Jura,France,C,S.M.P.,Domicile,C,"Le Pont-de-Roide, 12, rue du Moulin",B,30/10/35,18/11/35,18,"Toux grasse, fièvre intermittente."
+1491_W_1 (15),203,Brunel,Jean,Ouvrier,28/11/1911,Roanne,Loire,France,C,S.M.P.,Domicile,C,"Roanne, 13, rue du Moulin",B,28/10/35,14/11/35,16,"Toux sèche, dyspnée."
+1491_W_1 (15),204,Burette,Marguerite,Employée,17/06/1908,St. Chamond,Loire,France,C,S.M.P.,Domicile,C,"St. Chamond, 17, rue de la Paix",B,29/10/35,14/11/35,15,"Toux, fièvre, frissons."
+1491_W_1 (15),205,Caillet,Marie,Sans profession,10/08/1914,Vichy,Allier,France,C,S.M.P.,Domicile,C,"Vichy, 15, rue de la République",A,31/10/35,17/11/35,16,"Rhume, toux."
+1491_W_1 (15),206,Casseville,Louise,Sans profession,18/07/1913,St. Etienne,Loire,France,C,S.M.P.,Domicile,C,"St. Etienne, 10, rue de la Gare",B,01/11/35,20/11/35,19,"Toux, expectoration."
+1491_W_1 (15),207,Chabert,Jeanne,Sans profession,15/09/1912,Montbrison,Loire,France,C,S.M.P.,Domicile,C,"Montbrison, 22, rue de la Poste",A,02/11/35,19/11/35,17,"Rhume, fièvre légère."
+1491_W_1 (15),208,Chapuis,Fernand,Employé,12/05/1906,Lyon,Rhône,France,M,S.M.P.,Domicile,C,"Lyon, 14, rue de la République",B,03/11/35,21/11/35,18,"Toux, dyspnée."
+1491_W_1 (15),209,Charbonnier,Suzanne,Sans profession,25/01/1916,St. Chamond,Loire,France,C,S.M.P.,Domicile,C,"St. Chamond, 12, rue de la Gare",A,04/11/35,22/11/35,18,"Rhume, toux."
+1491_W_1 (15),210,Chauvin,Louis,Ouvrier,05/08/1907,Roanne,Loire,France,C,S.M.P.,Domicile,C,"Roanne, 18, rue de la Paix",B,05/11/35,23/11/35,18,"Toux, expectoration."

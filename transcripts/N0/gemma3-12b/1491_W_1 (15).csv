@@ -1,0 +1,11 @@
+photo,numero,nom,prenoms,profession,date_naissance,lieu_naissance,departement_naissance,pays,etat_civil,admis_au_titre_de,venant_de,religion,adresse,categorie_medicale,date_entree,date_sortie,nb_journees,observations
+1491_W_1 (15),181,Boucherel,Fernande,Employée,27/03/1910,Saint-Nazaire,Loire Inf.,France,C,S.M.P.,Domicile,C,"Saint-Nazaire, 43, rue du Commerce",A,16/10/35,29/10/35,13,Bronchite chronique.
+1491_W_1 (15),202,Brunel,Germaine,Sans profession,15/03/1907,Le Pont-de-Roide,Jura,France,C,S.M.P.,Domicile,C,"Le Pont-de-Roide, 12, rue du Moulin",B,30/10/35,18/11/35,18,"Toux grasse, fièvre intermittente."
+1491_W_1 (15),203,Brunel,Jean,Ouvrier,28/11/1911,Roanne,Loire,France,C,S.M.P.,Domicile,C,"Roanne, 13, rue du Moulin",B,28/10/35,14/11/35,16,"Toux sèche, dyspnée."
+1491_W_1 (15),204,Burette,Marguerite,Employée,17/06/1908,St. Chamond,Loire,France,C,S.M.P.,Domicile,C,"St. Chamond, 17, rue de la Paix",B,29/10/35,14/11/35,15,"Toux, fièvre, frissons."
+1491_W_1 (15),205,Caillet,Marie,Sans profession,10/08/1914,Vichy,Allier,France,C,S.M.P.,Domicile,C,"Vichy, 15, rue de la République",A,31/10/35,17/11/35,16,"Rhume, toux."
+1491_W_1 (15),206,Casseville,Louise,Sans profession,18/07/1913,St. Etienne,Loire,France,C,S.M.P.,Domicile,C,"St. Etienne, 10, rue de la Gare",B,01/11/35,20/11/35,19,"Toux, expectoration."
+1491_W_1 (15),207,Chabert,Jeanne,Sans profession,15/09/1912,Montbrison,Loire,France,C,S.M.P.,Domicile,C,"Montbrison, 22, rue de la Poste",A,02/11/35,19/11/35,17,"Rhume, fièvre légère."
+1491_W_1 (15),208,Chapuis,Fernand,Employé,12/05/1906,Lyon,Rhône,France,M,S.M.P.,Domicile,C,"Lyon, 14, rue de la République",B,03/11/35,21/11/35,18,"Toux, dyspnée."
+1491_W_1 (15),209,Charbonnier,Suzanne,Sans profession,25/01/1916,St. Chamond,Loire,France,C,S.M.P.,Domicile,C,"St. Chamond, 12, rue de la Gare",A,04/11/35,22/11/35,18,"Rhume, toux."
+1491_W_1 (15),210,Chauvin,Louis,Ouvrier,05/08/1907,Roanne,Loire,France,C,S.M.P.,Domicile,C,"Roanne, 18, rue de la Paix",B,05/11/35,23/11/35,18,"Toux, expectoration."

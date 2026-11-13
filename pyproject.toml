@@ -1,0 +1,23 @@
+[project]
+name = "htr-sanatorium"
+version = "0.1.0"
+description = "Océrisation de registres de sanatorium (1919-1939) par niveaux de complexité"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "httpx==0.28.1",
+    "numpy==2.5.4",
+    "opencv-python==5.0.0.93",
+    "pandas==3.1.1",
+    "pillow==13.0.0",
+    "pyyaml==6.0.3",
+    "rapidfuzz==3.14.6",
+    "scikit-image==0.26.0",
+    "tabulate==0.10.0",
+]
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/htr", "eval"]

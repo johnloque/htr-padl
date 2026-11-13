@@ -1,0 +1,24 @@
+# N0 — page entière, un seul appel. Churro 3B (fine-tuning de Qwen2.5-VL-3B), GGUF communautaire Q8_0
+strategy: N0
+model:
+  name: churro-3b                 # dossier de sortie : transcripts/N0/churro-3b/
+  backend: ollama             # ollama | openai (vLLM, llama.cpp server…)
+  id: "hf.co/mradermacher/churro-3B-GGUF:Q8_0"
+  host: http://localhost:11434
+  host_env: OLLAMA_HOST       # prioritaire si définie (ex. Docker -> host.docker.internal)
+  timeout_s: 1800
+  extra:
+    keep_alive: 30m
+prompt_file: configs/prompts/n0_page.fr.txt
+json_schema: true             # sortie JSON contrainte par le schéma (src/htr/schema.py)
+image:
+  max_side: 2048              # côté max après redimensionnement (photo d'origine 4000×3000)
+  jpeg_quality: 90
+inference:                    # options passées telles quelles au backend
+  temperature: 0.3
+  top_k: 20
+  top_p: 0.9
+  repeat_penalty: 1.05
+  num_ctx: 16384
+  num_predict: 8192           # coupe les boucles
+  seed: 42

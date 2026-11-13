@@ -1,0 +1,9 @@
+photo,numero,nom,prenoms,profession,date_naissance,lieu_naissance,departement_naissance,pays,etat_civil,admis_au_titre_de,venant_de,religion,adresse,categorie_medicale,date_entree,date_sortie,nb_journees,observations
+1491_W_1 (12),358,Stehrypare,Marie,Employée d’usine,20/04/1898,Bainsville,Meurthe & Moselle,France,C,"A.M.G. - Bainsville, Meurthe & Moselle",Domicile,Catholique,"Bainsville, Meurthe & Moselle",X,14/05/35,28/05/35,14,"Bronchite chronique, légère toux."
+1491_W_1 (12),359,Dupuis,Jean,Ouvrier,10/08/1902,Lorient,Morbihan,France,M,"A.M.G. - Lorient, Morbihan",Domicile,Catholique,"Lorient, Morbihan",Y,16/05/35,29/05/35,13,"Tuberculose pulmonaire, débutée."
+1491_W_1 (12),360,Bigorne,Marguerite,Mère au foyer,15/08/1904,Brest,Finistère,France,C,"A.M.G. - Brest, Finistère",Domicile,Catholique,"Brest, Finistère",Z,18/05/35,29/05/35,11,"Grippe, convalescence."
+1491_W_1 (12),361,Guyard,Raymond,Boulanger,11/09/1905,St. Amand,Nord,France,C,"A.M.G. - St. Amand, Nord",Domicile,Catholique,"St. Amand, Nord",W,20/05/35,31/05/35,11,"Bronchite aiguë, forte toux."
+1491_W_1 (12),362,Lecornu,Fernand,Ouvrier,05/11/1908,Caen,Calvados,France,C,"A.M.G. - Caen, Calvados",Domicile,Catholique,"Caen, Calvados",V,22/05/35,01/06/35,9,"Toux grasse, essoufflement."
+1491_W_1 (12),363,Duverge,Louise,Sans profession,12/08/1910,St. Lo,Manche,France,C,"A.M.G. - St. Lo, Manche",Domicile,Catholique,"St. Lo, Manche",U,23/05/35,31/05/35,8,"Rhume, légère fièvre."
+1491_W_1 (12),364,Courtois,Robert,Employé de commerce,18/02/1912,Rouen,Seine Inférieure,France,C,"A.M.G. - Rouen, Seine Inférieure",Domicile,Catholique,"Rouen, Seine Inférieure",T,24/05/35,01/06/35,7,"Convalescence, faiblesse."
+1491_W_1 (12),365,Poirier,Jeanne,Sans profession,07/09/1914,Le Mans,Sarthe,France,C,"A.M.G. - Le Mans, Sarthe",Domicile,Catholique,"Le Mans, Sarthe",S,25/05/35,31/05/35,6,"Grippe, fatigue."
