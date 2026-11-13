@@ -17,7 +17,6 @@ import json
 import re
 import unicodedata
 from dataclasses import dataclass
-from datetime import date
 from pathlib import Path
 
 import pandas as pd
@@ -91,25 +90,6 @@ def same_date(a: tuple | None, b: tuple | None) -> bool:
     if ya < 100 or yb < 100:  # année à deux chiffres d'un côté : on compare les deux derniers chiffres
         return ya % 100 == yb % 100
     return ya == yb
-
-
-def to_date(t: tuple | None) -> date | None:
-    if t is None:
-        return None
-    y = t[2] + 1900 if t[2] < 100 else t[2]
-    try:
-        return date(y, t[1], t[0])
-    except ValueError:
-        return None
-
-
-def coherent(row: dict) -> bool | None:
-    """nb_journees == date_sortie − date_entree (None si non calculable)."""
-    e, s = to_date(parse_date(row.get("date_entree", ""))), to_date(parse_date(row.get("date_sortie", "")))
-    n = re.sub(r"\D", "", row.get("nb_journees", "") or "")
-    if not (e and s and n):
-        return None
-    return (s - e).days == int(n)
 
 
 def cell_correct(key: str, gold: str, pred: str) -> bool:
@@ -201,7 +181,6 @@ def evaluate_run(strategy: str, model: str, gold: dict, pred_dir: Path, photos_d
     accs = {f.key: Acc() for f in FIELDS}
     errors = []
     rows_gold = rows_found = rows_extra = row_ok_struct = row_ok_all = 0
-    coh_pred = coh_n = 0
     for photo, grows in gold.items():
         prows = preds.get(photo, [])
         pairs, extra = align(grows, prows)
@@ -245,9 +224,6 @@ def evaluate_run(strategy: str, model: str, gold: dict, pred_dir: Path, photos_d
                                    "row_missing": not p, "image": str(photos_dir / f"{photo}.jpg").removeprefix(f"{ROOT}/")})
             row_ok_struct += ok_struct
             row_ok_all += ok_all
-            if p and (c := coherent(p)) is not None:
-                coh_n += 1
-                coh_pred += c
 
     metrics = []
     for f in FIELDS:
@@ -265,8 +241,7 @@ def evaluate_run(strategy: str, model: str, gold: dict, pred_dir: Path, photos_d
         })
     rows = {"rows_gold": rows_gold, "rows_found": rows_found, "rows_extra": rows_extra,
             "row_exact_structured": row_ok_struct / rows_gold if rows_gold else None,
-            "row_exact_all": row_ok_all / rows_gold if rows_gold else None,
-            "coherence_rate": coh_pred / coh_n if coh_n else None, "coherence_n": coh_n}
+            "row_exact_all": row_ok_all / rows_gold if rows_gold else None}
     return metrics, errors, rows
 
 
@@ -317,20 +292,18 @@ def fmt(x, pct=True, nd=1):
     return f"{100 * x:.{nd}f}" if pct else f"{x:.{nd}f}"
 
 
-def write_markdown(metrics: pd.DataFrame, summary: pd.DataFrame, path: Path, gold_coherence: float | None):
+def write_markdown(metrics: pd.DataFrame, summary: pd.DataFrame, path: Path):
     lines = ["# Synthèse de l'évaluation", "",
-             f"Cohérence dates/journées du gold lui-même : {fmt(gold_coherence)} % "
-             "(le registre et sa transcription ne sont pas toujours cohérents).", "",
              f"Seuils provisoires : exactitude ≥ {EXACT_THRESHOLD:.0%} (champs fermés, numériques, dates) ; "
              f"CER ≤ {CER_THRESHOLD:.0%} ({', '.join(CER_FIELDS)}) ; ≥ 90 % des erreurs signalées.", "",
              "## Vue d'ensemble", "",
              "| Stratégie | Modèle | JSON valide % | Lignes trouvées | Lignes en trop | Ligne exacte (structurés) % | "
-             "Cohérence dates/journées % | s/ligne | tok/s | Mémoire Go | h pour 5000 lignes | Seuils exactitude | Seuils CER |",
-             "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+             "s/ligne | tok/s | Mémoire Go | h pour 5000 lignes | Seuils exactitude | Seuils CER |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for _, r in summary.iterrows():
         lines.append(
             f"| {r.strategy} | {r.model} | {fmt(r.get('json_valid_rate'))} | {r.rows_found}/{r.rows_gold} | {r.rows_extra} | "
-            f"{fmt(r.row_exact_structured)} | {fmt(r.coherence_rate)} | {fmt(r.get('s_per_row'), False)} | "
+            f"{fmt(r.row_exact_structured)} | {fmt(r.get('s_per_row'), False)} | "
             f"{fmt(r.get('tokens_per_s'), False)} | {fmt(r.get('peak_memory_gb'), False)} | "
             f"{fmt(r.get('hours_for_5000_rows'), False)} | {'✅' if r.exact_fields_ok else '❌'} | "
             f"{'✅' if r.cer_fields_ok else '❌'} |")
@@ -376,8 +349,7 @@ def main(argv=None):
     sdf.to_csv(out / "summary.csv", index=False, float_format="%.4f")
     pd.DataFrame(all_errors).to_csv(out / "errors.csv", index=False)
     if len(mdf):
-        coh = [c for rows in gold.values() for r in rows if (c := coherent(r)) is not None]
-        write_markdown(mdf, sdf, out / "summary.md", sum(coh) / len(coh) if coh else None)
+        write_markdown(mdf, sdf, out / "summary.md")
     print(f"→ {out}/metrics.csv, summary.csv, errors.csv, summary.md")
 
 

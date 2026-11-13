@@ -1,16 +1,14 @@
 # Synthèse de l'évaluation
 
-Cohérence dates/journées du gold lui-même : 83.3 % (le registre et sa transcription ne sont pas toujours cohérents).
-
 Seuils provisoires : exactitude ≥ 95% (champs fermés, numériques, dates) ; CER ≤ 5% (nom, prenoms, lieu_naissance, departement_naissance) ; ≥ 90 % des erreurs signalées.
 
 ## Vue d'ensemble
 
-| Stratégie | Modèle | JSON valide % | Lignes trouvées | Lignes en trop | Ligne exacte (structurés) % | Cohérence dates/journées % | s/ligne | tok/s | Mémoire Go | h pour 5000 lignes | Seuils exactitude | Seuils CER |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| N0 | churro-3b | 71.4 | 107/140 | 0 | 0.0 | 33.3 | 22.5 | 29.3 | 4.4 | 31.3 | ❌ | ❌ |
-| N0 | gemma3-12b | 100.0 | 122/140 | 0 | 0.0 | 72.6 | 23.4 | 10.8 | 7.9 | 32.5 | ❌ | ❌ |
-| N0 | qwen3-vl-8b | 100.0 | 140/140 | 0 | 0.7 | 19.0 | 18.8 | 17.3 | 6.7 | 26.1 | ❌ | ❌ |
+| Stratégie | Modèle | JSON valide % | Lignes trouvées | Lignes en trop | Ligne exacte (structurés) % | s/ligne | tok/s | Mémoire Go | h pour 5000 lignes | Seuils exactitude | Seuils CER |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| N0 | churro-3b | 71.4 | 107/140 | 0 | 0.0 | 22.5 | 29.3 | 4.4 | 31.3 | ❌ | ❌ |
+| N0 | gemma3-12b | 100.0 | 122/140 | 0 | 0.0 | 23.4 | 10.8 | 7.9 | 32.5 | ❌ | ❌ |
+| N0 | qwen3-vl-8b | 100.0 | 140/140 | 0 | 0.7 | 18.8 | 17.3 | 6.7 | 26.1 | ❌ | ❌ |
 
 ## N0 — churro-3b
 
