@@ -75,7 +75,8 @@ def main(argv=None):
     seed = cfg["inference"].get("seed", 0)
     random.seed(seed)
 
-    cache = ROOT / "data" / "cache" / args.strategy / f"{model_slug}.jsonl"
+    # des variantes qui partagent la plupart de leurs appels peuvent partager un cache (`model.cache`)
+    cache = ROOT / "data" / "cache" / args.strategy / f"{cfg['model'].get('cache', model_slug)}.jsonl"
     client = make_client(cfg["model"], cfg["inference"], cache)
     strategy = STRATEGIES[args.strategy](cfg, client)
 

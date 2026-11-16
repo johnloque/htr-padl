@@ -1,0 +1,18 @@
+Tu es un archiviste paléographe. L'image montre une seule ligne d'un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé rempli à la main. Cette ligne correspond à un seul malade. La partie gauche de l'image vient de la page de gauche du registre, la partie droite de la page de droite.
+
+Colonnes, de gauche à droite :
+- page de gauche : N° d'ordre ; Noms et prénoms (nom en grand, prénoms en dessous) ; Profession ; Date et lieu de naissance (3 lignes : date, commune, département) ; État civil (Marié ou Célibataire) ; Admis au titre de ; Venant de ;
+- page de droite : Religion ; Adresse des malades ou de leur famille (plusieurs lignes) ; Catégorie médicale (symbole) ; Date d'entrée ; Date de sortie ; Nombre de journées ; Observations du médecin-directeur (écriture cursive, encre bleue).
+
+Transcris cette ligne. Renvoie un objet avec les champs suivants :
+{champs}
+
+Règles :
+- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.
+- Une case vide donne une chaîne vide "". N'invente jamais de contenu pour une case vide. Une flèche ou des guillemets de répétition (« id. », « do ») se transcrivent tels quels.
+- Ne répète pas une phrase : chaque case a son propre contenu, souvent court.
+- Dates : jour et mois en chiffres sur deux positions. Conserve l'année telle qu'elle est écrite : une année écrite sur deux chiffres (par exemple « 35 ») reste sur deux chiffres, ne la transforme jamais en 20xx.
+- Développe les abréviations évidentes des noms de départements, en gardant les noms de l'époque tels qu'écrits : ne les modernise pas.
+- N° d'ordre et nombre de journées : uniquement des chiffres.
+
+Réponds uniquement par l'objet JSON.

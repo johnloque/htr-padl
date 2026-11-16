@@ -1,0 +1,2 @@
+Case « Religion » : un mot, parfois abrégé.
+Renvoie {"religion": "..."} avec la valeur autorisée qui correspond à ce qui est écrit.

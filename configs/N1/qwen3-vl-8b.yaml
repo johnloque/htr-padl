@@ -1,0 +1,28 @@
+# N1 — une ligne, un appel sur la ligne complète. Qwen3-VL 8B, variante -instruct (la variante avec réflexion boucle)
+strategy: N1
+model:
+  name: qwen3-vl-8b                    # dossier de sortie : transcripts/N1/qwen3-vl-8b/
+  backend: ollama             # ollama | openai (vLLM, llama.cpp server…)
+  id: "qwen3-vl:8b-instruct"
+  host: http://localhost:11434
+  host_env: OLLAMA_HOST       # prioritaire si définie (ex. Docker -> host.docker.internal)
+  timeout_s: 600
+  extra:
+    keep_alive: 30m
+variant: ligne                   # ligne : ligne complète, un appel | demi : demi-lignes gauche/droite, deux appels
+prompts:
+  ligne: configs/prompts/n1_ligne.fr.txt
+json_schema: true             # sortie JSON contrainte par le schéma (src/htr/schema.py)
+rows_dir: data/rows           # crops de la segmentation
+segmentation_dir: data/segmentation
+image:
+  max_side: 3500              # les crops de ligne font ≈ 3400×290 px (demi-ligne ≈ 1650×290) : pas de réduction
+  jpeg_quality: 90
+inference:                    # options passées telles quelles au backend
+  temperature: 0.3
+  top_k: 20
+  top_p: 0.9
+  repeat_penalty: 1.05
+  num_ctx: 16384
+  num_predict: 1024           # une ligne fait ≈ 300 tokens : coupe les boucles
+  seed: 42

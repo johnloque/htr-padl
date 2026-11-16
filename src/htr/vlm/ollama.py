@@ -14,12 +14,12 @@ class OllamaClient(VLMClient):
         r.raise_for_status()
         return r.json()
 
-    def _call(self, prompt, images, schema):
+    def _call(self, prompt, images, schema, options):
         payload = {
             "model": self.model_id,
             "messages": [{"role": "user", "content": prompt, "images": [b64(i) for i in images]}],
             "stream": False,
-            "options": self.options,
+            "options": options,
             "keep_alive": self.extra.get("keep_alive", "30m"),
         }
         if schema is not None:

@@ -15,11 +15,11 @@ _MAP = {"temperature": "temperature", "top_p": "top_p", "num_predict": "max_toke
 class OpenAICompatClient(VLMClient):
     backend = "openai"
 
-    def _call(self, prompt, images, schema):
+    def _call(self, prompt, images, schema, options):
         content = [{"type": "text", "text": prompt}]
         content += [{"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64(i)}"}} for i in images]
         payload = {"model": self.model_id, "messages": [{"role": "user", "content": content}]}
-        for k, v in self.options.items():
+        for k, v in options.items():
             if k in _MAP:
                 payload[_MAP[k]] = v
         if schema is not None:

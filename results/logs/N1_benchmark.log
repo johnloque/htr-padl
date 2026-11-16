@@ -1,0 +1,106 @@
+=== N1 / qwen3-vl-8b (qwen3-vl:8b-instruct) — 09:40:32
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 323s, 2538 tok (16.5 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 334s, 2588 tok (15.6 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 335s, 2597 tok (15.6 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 305s, 2597 tok (17.5 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 272s, 2525 tok (20.3 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 266s, 2493 tok (20.3 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 268s, 2533 tok (20.3 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 264s, 2453 tok (20.4 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=KO, 316s, 3289 tok (19.2 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 274s, 2570 tok (20.0 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 279s, 2563 tok (19.6 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 276s, 2538 tok (19.9 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 276s, 2560 tok (19.9 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 275s, 2534 tok (19.9 tok/s)
+→ transcripts/N1/qwen3-vl-8b ; results/runs/N1/qwen3-vl-8b.json
+=== N1 / qwen3-vl-8b-demi (qwen3-vl:8b-instruct) — 10:42:54
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 379s, 2534 tok (21.1 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 376s, 2617 tok (21.1 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 380s, 2632 tok (21.1 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 380s, 2668 tok (21.1 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 374s, 2543 tok (21.1 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 375s, 2524 tok (21.1 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 377s, 2568 tok (21.2 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 372s, 2476 tok (21.1 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 371s, 2480 tok (21.1 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 378s, 2571 tok (21.1 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 376s, 2604 tok (21.1 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 368s, 2566 tok (21.1 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 370s, 2634 tok (21.1 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 366s, 2537 tok (21.0 tok/s)
+→ transcripts/N1/qwen3-vl-8b-demi ; results/runs/N1/qwen3-vl-8b-demi.json
+=== N1 / churro-3b (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 12:10:19
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 156s, 2498 tok (36.9 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 152s, 2555 tok (37.0 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 147s, 2493 tok (37.1 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 150s, 2595 tok (37.0 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 149s, 2527 tok (37.0 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 149s, 2484 tok (37.0 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 149s, 2497 tok (37.0 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 146s, 2472 tok (37.1 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 144s, 2411 tok (37.0 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 148s, 2544 tok (37.0 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 156s, 2506 tok (36.7 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 154s, 2438 tok (36.7 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 154s, 2508 tok (36.9 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 155s, 2494 tok (36.8 tok/s)
+→ transcripts/N1/churro-3b ; results/runs/N1/churro-3b.json
+=== N1 / churro-3b-demi (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 12:45:30
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 211s, 2569 tok (38.0 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 210s, 2635 tok (37.9 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 211s, 2624 tok (37.9 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 213s, 2706 tok (37.8 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 210s, 2590 tok (37.9 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 210s, 2565 tok (37.9 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 211s, 2568 tok (37.8 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 209s, 2495 tok (37.8 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 208s, 2501 tok (37.9 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 211s, 2607 tok (37.9 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 208s, 2554 tok (37.9 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 205s, 2579 tok (37.9 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 205s, 2630 tok (38.2 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 200s, 2558 tok (39.0 tok/s)
+→ transcripts/N1/churro-3b-demi ; results/runs/N1/churro-3b-demi.json
+=== N1 / gemma3-12b (gemma3:12b) — 13:34:19
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 375s, 2520 tok (10.9 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 397s, 2520 tok (10.0 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 389s, 2453 tok (10.0 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 387s, 2439 tok (10.0 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=KO, 461s, 3162 tok (10.0 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 386s, 2398 tok (9.9 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 480s, 2506 tok (0.2 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 604s, 2256 tok (0.0 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 395s, 2405 tok (9.8 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 390s, 2400 tok (9.9 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 406s, 2543 tok (9.9 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 396s, 2507 tok (10.0 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 392s, 2455 tok (10.0 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 376s, 2307 tok (10.0 tok/s)
+→ transcripts/N1/gemma3-12b ; results/runs/N1/gemma3-12b.json
+=== N1 / gemma3-12b-demi (gemma3:12b) — 15:46:51
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 468s, 2610 tok (10.9 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 437s, 2672 tok (11.8 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 438s, 2682 tok (11.8 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=KO, 494s, 3322 tok (11.8 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 423s, 2536 tok (11.9 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 426s, 2575 tok (11.9 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 426s, 2561 tok (11.8 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 418s, 2468 tok (11.9 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 427s, 2573 tok (11.8 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 430s, 2620 tok (11.8 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 432s, 2635 tok (11.8 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 429s, 2607 tok (11.8 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 428s, 2582 tok (11.8 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 422s, 2521 tok (11.9 tok/s)
+→ transcripts/N1/gemma3-12b-demi ; results/runs/N1/gemma3-12b-demi.json
+N0/churro-3b: 107/140 lignes, 1418 cellules erronées
+N0/gemma3-12b: 122/140 lignes, 2291 cellules erronées
+N0/qwen3-vl-8b: 140/140 lignes, 1090 cellules erronées
+N1/churro-3b: 140/140 lignes, 879 cellules erronées
+N1/churro-3b-demi: 140/140 lignes, 843 cellules erronées
+N1/gemma3-12b: 140/140 lignes, 2158 cellules erronées
+N1/gemma3-12b-demi: 140/140 lignes, 1510 cellules erronées
+N1/qwen3-vl-8b: 140/140 lignes, 1075 cellules erronées
+N1/qwen3-vl-8b-demi: 140/140 lignes, 960 cellules erronées
+→ /Users/michel/Dev/htr-test-julie/results/metrics.csv, summary.csv, errors.csv, summary.md

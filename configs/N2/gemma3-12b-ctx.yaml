@@ -1,0 +1,41 @@
+# N2 — une case, un appel, prompts spécialisés. Gemma 3 12B (Ollama, Q4_K_M) Variante avec la demi-ligne comme contexte.
+strategy: N2
+model:
+  name: gemma3-12b-ctx
+  backend: ollama             # ollama | openai (vLLM, llama.cpp server…)
+  id: "gemma3:12b"
+  host: http://localhost:11434
+  host_env: OLLAMA_HOST       # prioritaire si définie (ex. Docker -> host.docker.internal)
+  timeout_s: 300
+  cache: gemma3-12b-ctx                   # cache partagé entre variantes du même modèle (data/cache/N2/<cache>.jsonl)
+  extra:
+    keep_alive: 30m
+cells_file: configs/N2/cells.yaml         # prompt, champs et longueur de sortie par case
+vocab_file: configs/vocab.yaml            # valeurs autorisées des champs fermés
+categorie_medicale: vlm                    # vlm : appel de modèle | classifier : classifieur d'images
+classifier_config: configs/N2/classifier.yaml
+context: true                               # true : la demi-ligne est jointe comme seconde image
+prompts:
+  entete: configs/prompts/n2/_entete.fr.txt
+  image_seule: "L'image montre une seule case de ce tableau."
+  image_contexte: "La première image montre une seule case de ce tableau ; la seconde montre, pour contexte, la demi-ligne qui contient cette case. Ne transcris que la case de la première image."
+cells_dir: data/cells
+rows_dir: data/rows
+segmentation_dir: data/segmentation
+image:
+  upscale: 2.0                # les cases font ≈ 110-500 × 290 px : agrandies avant l'appel
+  max_side: 1600
+  jpeg_quality: 90
+long_text:                    # adresse, observations
+  ngram: 3                    # un n-gramme de mots répété plus de max_repeats fois = boucle
+  max_repeats: 2
+  retries:                    # nouvelles tentatives, dans l'ordre, si boucle ou sortie tronquée
+    - {temperature: 0.7, repeat_penalty: 1.2, seed: 7}
+    - {temperature: 0.1, repeat_penalty: 1.3, seed: 11}
+inference:                    # options passées telles quelles au backend (num_predict fixé par case)
+  temperature: 0.3
+  top_k: 20
+  top_p: 0.9
+  repeat_penalty: 1.05
+  num_ctx: 4096               # une case : < 1 500 tokens
+  seed: 42

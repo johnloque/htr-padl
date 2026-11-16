@@ -1,0 +1,3 @@
+Case « Noms et prénoms », sur deux lignes : en haut le nom de famille, écrit en grand ; en dessous le ou les prénoms, plus petits.
+Renvoie {"nom": "...", "prenoms": "..."}.
+Ce sont des noms propres : lis-les lettre par lettre et ne les remplace pas par un nom plus courant qui leur ressemble. Écris-les avec une majuscule initiale, le reste en minuscules.

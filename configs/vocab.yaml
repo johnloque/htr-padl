@@ -1,0 +1,21 @@
+# Vocabulaires fermés (README §3 N2) : valeurs autorisées dans les schémas JSON (`enum`).
+# PROPOSITION À VALIDER : valeurs relevées dans le gold (14 photos, 140 lignes), regroupées.
+# La chaîne vide "" est toujours autorisée (case vide).
+etat_civil: [C, M, V, Divorcé, Séparé]
+religion: [Catholique, Protestant, Israélite, Musulman, Sans religion]
+categorie_medicale: [P, O]
+# « Admis au titre de » = un ou plusieurs organismes (liste ci-dessous) + un complément libre
+# (département ou ville), recomposés en « <organisme> et <organisme> <complément> ».
+organismes:
+  - AMG
+  - AMG État
+  - Assistance publique de Paris
+  - Office public d'hygiène de la Seine
+  - Office d'hygiène de la Seine
+  - Assistance sociale
+  - Assurance sociale
+  - Dispensaire
+  - Comité d'hygiène sociale
+  - Pupille de la nation
+  - Art 64
+  - Payant

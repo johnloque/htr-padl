@@ -1,0 +1,2 @@
+Case « État civil » (Marié ou Célibataire) : en général une seule lettre manuscrite, souvent suivie d'un point. C = célibataire, M = marié, V = veuf ; parfois un mot (divorcé, séparé).
+Renvoie {"etat_civil": "..."} avec la valeur autorisée qui correspond à ce qui est écrit.

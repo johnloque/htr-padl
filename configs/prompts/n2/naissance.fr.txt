@@ -1,0 +1,6 @@
+Case « Date et lieu de naissance », sur trois lignes : 1) la date ; 2) la commune, souvent précédée de « à » ; 3) le département, ou pour une naissance hors de France, le pays ou la province.
+Renvoie {"date_naissance": "...", "lieu_naissance": "...", "departement_naissance": "...", "pays": "..."} :
+- date_naissance : au format JJ/MM/AAAA, jour et mois en chiffres sur deux positions (un mois écrit en lettres est converti en chiffres), année telle qu'elle est écrite ;
+- lieu_naissance : la commune, sans le « à » ;
+- departement_naissance : le département, abréviations évidentes développées, nom de l'époque conservé tel qu'écrit (ne le modernise pas) ; "" si la naissance est hors de France ;
+- pays : « France » si un département français est indiqué, sinon le pays écrit.

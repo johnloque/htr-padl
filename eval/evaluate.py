@@ -49,6 +49,8 @@ def tolerant(s: str) -> str:
     """Minuscules, accents retirés, ponctuation neutralisée (« A.M.G. » == « AMG »)."""
     s = strip_accents(strict(s).lower()).replace(".", "")
     s = re.sub(r"[^\w]+", " ", s)
+    # sigles écrits lettre par lettre : « A. M. G. » -> « amg »
+    s = re.sub(r"\b(?:[a-z] ){2,}[a-z]\b", lambda m: m.group(0).replace(" ", ""), s)
     return " ".join(s.split())
 
 
@@ -256,8 +258,10 @@ def run_stats(strategy: str, model: str, gold_photos: set[str]) -> dict:
     timed = [r for r in ph if not r.get("cached")] or ph
     model_s = sum(r["model_s"] for r in timed)
     rows = sum(max(r["n_rows"], 1) for r in timed)
-    out_tok = sum(r["output_tokens"] for r in timed)
-    gen_s = sum(r["gen_s"] for r in timed)
+    # durée de génération rapportée par le backend : ignorée si plus longue que l'appel lui-même (valeur aberrante)
+    gen_ok = [r for r in timed if r["gen_s"] <= r["model_s"]]
+    out_tok = sum(r["output_tokens"] for r in gen_ok)
+    gen_s = sum(r["gen_s"] for r in gen_ok)
     client = run.get("client", {})
     s_per_row = model_s / rows if rows else None
     return {

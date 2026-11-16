@@ -1,0 +1,2 @@
+Case « Adresse des malades ou de leur famille », sur plusieurs lignes : destinataire, rue ou lieu-dit, commune, département.
+Renvoie {"adresse": "..."} : toutes les lignes dans l'ordre, sur une seule ligne, séparées par des virgules. N'ajoute rien qui ne soit écrit, ne répète aucune ligne.

@@ -104,8 +104,11 @@ Environnement : `uv sync` (Python 3.12, dépendances épinglées dans `pyproject
 | Benchmark (plusieurs modèles, un chargé à la fois, puis évaluation) | `scripts/run_benchmark.sh N0 qwen3-vl-8b gemma3-12b churro-3b` | idem + `results/` |
 | Évaluation seule | `uv run python -m eval.evaluate [--only N0/qwen3-vl-8b]` | `results/metrics.csv`, `summary.csv`, `errors.csv`, `summary.md` |
 | Segmentation (N1), détail dans [docs/segmentation.md](docs/segmentation.md) | `uv run python -m htr.segmentation.segment [--only "1491_W_1 (9)"]` | `data/rows/`, `data/cells/`, `data/debug/index.html`, `data/segmentation/report.csv` |
+| N1 — une ligne, un appel (`<modèle>` : ligne complète ; `<modèle>-demi` : deux demi-lignes) | `scripts/run_benchmark.sh N1 qwen3-vl-8b qwen3-vl-8b-demi …` | `transcripts/N1/<modèle>[-demi]/` |
+| N2 — une case, un appel (`<modèle>-classif` : catégorie médicale par classifieur ; `<modèle>-ctx` : demi-ligne jointe en contexte) | `scripts/run_benchmark.sh N2 qwen3-vl-8b qwen3-vl-8b-classif …` | `transcripts/N2/<modèle>[-classif\|-ctx]/` |
+| Classifieur de catégorie médicale (validation croisée par photo) | `uv run python -m htr.classifier.categorie` | exactitude et erreurs à l'écran |
 | Coins manuels (repli) | `uv run python -m htr.segmentation.click_corners "1491_W_1 (9)"` | `data/corners/<photo>.json`, pris en compte à la segmentation suivante |
 
-Configurations : `configs/<stratégie>/<modèle>.yaml` (modèle, prompt, image, inférence), `configs/prompts/`, `configs/segmentation.yaml`. Le schéma de sortie commun est dans `src/htr/schema.py`.
+Configurations : `configs/<stratégie>/<modèle>.yaml` (modèle, prompt, image, inférence), `configs/prompts/`, `configs/segmentation.yaml`. N2 : description des cases dans `configs/N2/cells.yaml`, vocabulaires fermés dans `configs/vocab.yaml` (proposition tirée du gold, à valider), classifieur dans `configs/N2/classifier.yaml`. Le schéma de sortie commun est dans `src/htr/schema.py`.
 
 Gold : les fichiers `gold/transcripts/<photo>.csv` portent le même nom que `gold/photos/<photo>.jpg` (14 photos ; la photo `(3)`, sans transcription, a été retirée).

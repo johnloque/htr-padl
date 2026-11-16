@@ -1,0 +1,2 @@
+Case « Catégorie médicale » : un seul symbole manuscrit, parfois suivi d'un point. Il y a deux symboles : l'un ressemble à la lettre P (parfois en forme de triangle ou de crochet, barré d'un trait vertical) ; l'autre ressemble à la lettre O (un ovale, parfois avec une boucle ou un trait à l'intérieur).
+Renvoie {"categorie_medicale": "..."} : la lettre qui correspond au symbole.

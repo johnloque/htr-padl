@@ -1,0 +1,36 @@
+=== N2 / churro-3b (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 17:46:18
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 987s, 2865 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 950s, 2991 tok (40.6 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 955s, 2940 tok (40.1 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 971s, 2989 tok (39.4 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 969s, 2868 tok (39.5 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 966s, 2858 tok (39.4 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 965s, 2900 tok (39.4 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 963s, 2791 tok (39.5 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 964s, 2796 tok (39.4 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 967s, 2934 tok (39.3 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1021s, 2948 tok (34.9 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1045s, 2887 tok (33.2 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1049s, 2929 tok (33.2 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1050s, 2926 tok (33.2 tok/s)
+→ transcripts/N2/churro-3b ; results/runs/N2/churro-3b.json
+=== N2 / churro-3b-classif (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 21:20:32
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 915s, 2762 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 884s, 2891 tok (40.5 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 888s, 2840 tok (40.1 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 903s, 2889 tok (39.3 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 901s, 2768 tok (39.4 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 898s, 2758 tok (39.4 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 897s, 2800 tok (39.4 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 896s, 2691 tok (39.5 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 897s, 2696 tok (39.3 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 899s, 2834 tok (39.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 951s, 2845 tok (34.8 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 973s, 2787 tok (33.1 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 976s, 2829 tok (33.0 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 976s, 2826 tok (33.3 tok/s) [cache]
+→ transcripts/N2/churro-3b-classif ; results/runs/N2/churro-3b-classif.json
+=== N2 / qwen3-vl-8b (qwen3-vl:8b-instruct) — 21:20:46
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1716s, 2619 tok (20.0 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1614s, 2718 tok (22.5 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1611s, 2670 tok (22.4 tok/s)

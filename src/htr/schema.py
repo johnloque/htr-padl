@@ -50,6 +50,9 @@ FIELDS: list[Field] = [
 
 FIELD_KEYS = [f.key for f in FIELDS]
 BY_KEY = {f.key: f for f in FIELDS}
+# Champs lus sur la page de gauche (identité) et sur la page de droite (séjour), pour les demi-lignes (N1)
+LEFT_KEYS = FIELD_KEYS[: FIELD_KEYS.index("venant_de") + 1]
+RIGHT_KEYS = FIELD_KEYS[len(LEFT_KEYS):]
 PHOTO_COL = "photo"
 ROW_COLUMNS = [PHOTO_COL, *FIELD_KEYS]
 

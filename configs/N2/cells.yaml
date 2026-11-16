@@ -1,0 +1,68 @@
+# N2 — une case, un appel : une entrée par colonne segmentée (noms des crops data/cells/<photo>/rNN/<colonne>.jpg).
+#   prompt      : consigne propre à la case (précédée de configs/prompts/n2/_entete.fr.txt)
+#   fields      : champs JSON demandés ; `enum` renvoie à configs/vocab.yaml, `array` = liste de valeurs
+#   output      : champs du schéma commun produits (src/htr/schema.py) ; `compose` les recompose
+#   num_predict : longueur maximale de sortie (tokens) ; pour le texte long, proportionnelle à la largeur :
+#                 num_predict_per_100px × largeur du crop / 100 (plancher num_predict)
+#   long        : texte long → détection de répétition et nouvelle tentative (section `long_text` de la config)
+numero:
+  prompt: configs/prompts/n2/numero.fr.txt
+  fields: {numero: {}}
+  num_predict: 32
+noms_prenoms:
+  prompt: configs/prompts/n2/noms_prenoms.fr.txt
+  fields: {nom: {}, prenoms: {}}
+  num_predict: 64
+profession:
+  prompt: configs/prompts/n2/profession.fr.txt
+  fields: {profession: {}}
+  num_predict: 48
+naissance:
+  prompt: configs/prompts/n2/naissance.fr.txt
+  fields: {date_naissance: {}, lieu_naissance: {}, departement_naissance: {}, pays: {}}
+  num_predict: 128
+etat_civil:
+  prompt: configs/prompts/n2/etat_civil.fr.txt
+  fields: {etat_civil: {enum: etat_civil}}
+  num_predict: 24
+admis_au_titre_de:
+  prompt: configs/prompts/n2/admis_au_titre_de.fr.txt
+  fields: {organismes: {enum: organismes, array: true}, complement: {}}
+  compose: {admis_au_titre_de: "{organismes} {complement}"}
+  num_predict: 96
+venant_de:
+  prompt: configs/prompts/n2/venant_de.fr.txt
+  fields: {venant_de: {}}
+  num_predict: 96
+religion:
+  prompt: configs/prompts/n2/religion.fr.txt
+  fields: {religion: {enum: religion}}
+  num_predict: 24
+adresse:
+  prompt: configs/prompts/n2/adresse.fr.txt
+  fields: {adresse: {}}
+  num_predict: 96
+  num_predict_per_100px: 40
+  long: true
+categorie_medicale:
+  prompt: configs/prompts/n2/categorie_medicale.fr.txt
+  fields: {categorie_medicale: {enum: categorie_medicale}}
+  num_predict: 16
+date_entree:
+  prompt: configs/prompts/n2/date_entree.fr.txt
+  fields: {date_entree: {}}
+  num_predict: 32
+date_sortie:
+  prompt: configs/prompts/n2/date_sortie.fr.txt
+  fields: {date_sortie: {}}
+  num_predict: 32
+nb_journees:
+  prompt: configs/prompts/n2/nb_journees.fr.txt
+  fields: {nb_journees: {}}
+  num_predict: 24
+observations:
+  prompt: configs/prompts/n2/observations.fr.txt
+  fields: {observations: {}}
+  num_predict: 128
+  num_predict_per_100px: 50
+  long: true

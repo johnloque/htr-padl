@@ -1,0 +1,2 @@
+Case « Date de sortie » : une date écrite en chiffres, par exemple 14/3/36.
+Renvoie {"date_sortie": "..."} au format JJ/MM/AA : jour et mois en chiffres sur deux positions, année telle qu'elle est écrite (une année sur deux chiffres reste sur deux chiffres, ne la transforme jamais en 20xx).

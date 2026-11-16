@@ -1,0 +1,2 @@
+Case « Profession » : un mot ou une courte expression.
+Renvoie {"profession": "..."}, avec une majuscule initiale.

@@ -68,7 +68,7 @@ class VLMClient(abc.ABC):
 
     # --- à implémenter par backend ---
     @abc.abstractmethod
-    def _call(self, prompt: str, images: list[bytes], schema: dict | None) -> VLMResponse: ...
+    def _call(self, prompt: str, images: list[bytes], schema: dict | None, options: dict) -> VLMResponse: ...
 
     def info(self) -> dict:
         """Versions et métadonnées (backend, quantification…), enregistrées avec les résultats."""
@@ -84,32 +84,34 @@ class VLMClient(abc.ABC):
         pass
 
     # --- commun ---
-    def _key(self, prompt: str, images: list[bytes], schema: dict | None) -> str:
+    def _key(self, prompt: str, images: list[bytes], schema: dict | None, options: dict) -> str:
         h = hashlib.sha256()
         payload = {"backend": self.backend, "model": self.model_id, "prompt": prompt,
-                   "schema": schema, "options": self.options, "extra": self.extra}
+                   "schema": schema, "options": options, "extra": self.extra}
         h.update(json.dumps(payload, sort_keys=True, ensure_ascii=False).encode())
         for im in images:
             h.update(hashlib.sha256(im).digest())
         return h.hexdigest()
 
     def generate(self, prompt: str, images: list[bytes], schema: dict | None = None,
-                 meta: dict | None = None) -> VLMResponse:
-        key = self._key(prompt, images, schema)
+                 meta: dict | None = None, options: dict | None = None) -> VLMResponse:
+        """`options` complète ou remplace, pour cet appel seulement, les options d'inférence de la config."""
+        options = {**self.options, **(options or {})}
+        key = self._key(prompt, images, schema, options)
         if key in self._cache:
             rec = self._cache[key]
             resp = VLMResponse(**rec["response"])
             resp.cached = True
             return resp
         t0 = time.perf_counter()
-        resp = self._call(prompt, images, schema)
+        resp = self._call(prompt, images, schema, options)
         resp.wall_s = time.perf_counter() - t0
         rec = {
             "key": key,
             "time": time.strftime("%Y-%m-%dT%H:%M:%S"),
             "meta": meta or {},
             "request": {"backend": self.backend, "model": self.model_id, "host": self.host,
-                        "options": self.options, "extra": self.extra, "schema": schema,
+                        "options": options, "extra": self.extra, "schema": schema,
                         "prompt": prompt,
                         "images_sha256": [hashlib.sha256(im).hexdigest() for im in images]},
             "response": asdict(resp),

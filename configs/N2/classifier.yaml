@@ -1,0 +1,14 @@
+# Classifieur du symbole de catégorie médicale (src/htr/classifier/categorie.py)
+sauvola_window: 25
+sauvola_k: 0.2
+dot_gap_px: 9             # fermeture horizontale qui relie les points de la ligne d'écriture en pointillés
+line_frac: 0.5            # un trait plus long que cette fraction de la cellule est une réglure, retirée
+crop_x: [0.08, 0.92]      # zone où chercher l'encre (fractions de la cellule)
+crop_y: [0.15, 0.85]
+min_component_frac: 0.1   # composantes voisines gardées : ≥ cette fraction de la plus grande…
+neighbour_frac: 0.3       # … et à moins de cette fraction de sa taille
+box_margin: 0.15
+size: 64                  # côté du carré normalisé
+orientations: 9
+pixels_per_cell: 8
+k: 3

@@ -1,0 +1,4 @@
+Case « Admis au titre de » : l'organisme qui prend en charge le séjour (« A.M.G. » = Assistance médicale gratuite), en général suivi, sur la ligne suivante, d'un département ou d'une ville.
+Renvoie {"organismes": [...], "complement": "..."} :
+- organismes : le ou les organismes écrits, dans l'ordre, choisis parmi les valeurs autorisées ;
+- complement : le reste du texte (département, ville), abréviations évidentes de départements développées, nom de l'époque conservé. Si un organisme écrit n'a pas d'équivalent dans les valeurs autorisées, mets-le dans complement tel qu'écrit.

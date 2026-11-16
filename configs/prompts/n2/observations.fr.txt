@@ -1,0 +1,2 @@
+Case « Observations du médecin-directeur » : quelques lignes en écriture cursive, à l'encre bleue.
+Renvoie {"observations": "..."} : le texte sur une seule ligne, dans l'ordre de lecture. Si un mot est illisible, écris ce que tu lis ; ne complète jamais par des phrases inventées et ne répète aucune phrase.

@@ -1,0 +1,2 @@
+Case « N° d'ordre » : un numéro d'ordre écrit à la main.
+Renvoie {"numero": "..."} : uniquement les chiffres, sans espace ni ponctuation.

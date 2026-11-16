@@ -1,0 +1,2 @@
+Case « Nombre de journées » : un nombre entier écrit à la main.
+Renvoie {"nb_journees": "..."} : uniquement les chiffres.

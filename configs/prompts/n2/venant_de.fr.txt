@@ -1,0 +1,2 @@
+Case « Venant de » : la provenance du malade (son domicile, un hôpital, un sanatorium…).
+Renvoie {"venant_de": "..."} : le texte tel qu'écrit, sur une seule ligne, avec une majuscule initiale.
