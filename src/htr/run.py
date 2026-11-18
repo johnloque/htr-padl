@@ -1,6 +1,12 @@
 """Lance une stratégie × modèle sur un dossier de photos.
 
     uv run python -m htr.run --strategy N0 --model qwen3-vl-8b [--input gold/photos] [--limit 2]
+    uv run python -m htr.run --strategy N2 --model qwen3-vl-8b --prompts configs/prompts/n2_v2
+
+`--prompts DIR` (N2) : jeu de prompts alternatif. Chaque fichier de DIR remplace le fichier de même nom de
+configs/prompts/n2/ ; les fichiers absents de DIR gardent la version par défaut. Les sorties sont nommées
+<modele>@<nom de DIR> (ou `--tag`), à côté de la version par défaut : l'évaluation les compare directement.
+Le cache est partagé : seules les cases dont le prompt a changé sont recalculées.
 
 Sorties :
 - transcripts/<strategie>/<modele>/<photo>.csv et all.csv
@@ -68,15 +74,22 @@ def main(argv=None):
     ap.add_argument("--input", default="gold/photos")
     ap.add_argument("--limit", type=int, default=None, help="ne traiter que les N premières photos")
     ap.add_argument("--keep-loaded", action="store_true", help="ne pas décharger le modèle à la fin")
+    ap.add_argument("--prompts", default=None, help="dossier de prompts alternatifs (N2)")
+    ap.add_argument("--tag", default=None, help="suffixe des sorties (défaut : nom du dossier --prompts)")
     args = ap.parse_args(argv)
 
     cfg = load_config(args.strategy, args.model)
     model_slug = cfg["model"]["name"]
+    if args.prompts:
+        cfg["prompts_dir"] = args.prompts
+    tag = args.tag or (Path(args.prompts).name if args.prompts else None)
+    if tag:
+        model_slug = f"{model_slug}@{tag}"
     seed = cfg["inference"].get("seed", 0)
     random.seed(seed)
 
     # des variantes qui partagent la plupart de leurs appels peuvent partager un cache (`model.cache`)
-    cache = ROOT / "data" / "cache" / args.strategy / f"{cfg['model'].get('cache', model_slug)}.jsonl"
+    cache = ROOT / "data" / "cache" / args.strategy / f"{cfg['model'].get('cache', cfg['model']['name'])}.jsonl"
     client = make_client(cfg["model"], cfg["inference"], cache)
     strategy = STRATEGIES[args.strategy](cfg, client)
 
@@ -90,7 +103,7 @@ def main(argv=None):
     info = client.info()
     run = {
         "strategy": args.strategy, "model": model_slug, "config": cfg, "client": info,
-        "git_commit": git_commit(), "python": sys.version.split()[0], "platform": platform.platform(),
+        "prompts_dir": cfg.get("prompts_dir"), "git_commit": git_commit(), "python": sys.version.split()[0], "platform": platform.platform(),
         "started": time.strftime("%Y-%m-%dT%H:%M:%S"), "input": args.input, "photos": [],
     }
     all_rows, peak_mem = [], 0

@@ -34,3 +34,401 @@
 [1/14] 1491_W_1 (1): 10 lignes, json=ok, 1716s, 2619 tok (20.0 tok/s)
 [2/14] 1491_W_1 (2): 10 lignes, json=ok, 1614s, 2718 tok (22.5 tok/s)
 [3/14] 1491_W_1 (4): 10 lignes, json=ok, 1611s, 2670 tok (22.4 tok/s)
+=== N2 / qwen3-vl-8b (qwen3-vl:8b-instruct) — 22:55:47
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1716s, 2619 tok (20.0 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1614s, 2718 tok (22.5 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1611s, 2670 tok (22.4 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1766s, 2737 tok (19.1 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1742s, 2608 tok (19.7 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1624s, 2613 tok (22.2 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1620s, 2618 tok (22.3 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1620s, 2537 tok (22.3 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1670s, 2563 tok (20.7 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1621s, 2645 tok (22.3 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1626s, 2676 tok (22.3 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1621s, 2613 tok (22.3 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1628s, 2660 tok (22.2 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1625s, 2633 tok (22.3 tok/s)
+→ transcripts/N2/qwen3-vl-8b ; results/runs/N2/qwen3-vl-8b.json
+=== N2 / qwen3-vl-8b-classif (qwen3-vl:8b-instruct) — 03:56:19
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1598s, 2519 tok (19.9 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1501s, 2618 tok (22.4 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1497s, 2570 tok (22.3 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1642s, 2637 tok (19.0 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1621s, 2508 tok (19.7 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1508s, 2513 tok (22.2 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1505s, 2518 tok (22.2 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1506s, 2437 tok (22.3 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1552s, 2463 tok (20.6 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1506s, 2545 tok (22.2 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1512s, 2576 tok (22.2 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1508s, 2513 tok (22.2 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1513s, 2560 tok (22.1 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1510s, 2533 tok (22.2 tok/s) [cache]
+→ transcripts/N2/qwen3-vl-8b-classif ; results/runs/N2/qwen3-vl-8b-classif.json
+=== N2 / gemma3-12b (gemma3:12b) — 03:56:30
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1372s, 2396 tok (12.9 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1372s, 2461 tok (12.8 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1373s, 2484 tok (12.8 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1378s, 2540 tok (12.8 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1359s, 2312 tok (12.9 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1364s, 2358 tok (12.9 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1362s, 2345 tok (12.9 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1361s, 2342 tok (12.9 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1364s, 2363 tok (12.9 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1369s, 2411 tok (12.8 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1370s, 2434 tok (12.9 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1367s, 2398 tok (12.9 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1368s, 2409 tok (12.9 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1365s, 2413 tok (13.0 tok/s)
+→ transcripts/N2/gemma3-12b ; results/runs/N2/gemma3-12b.json
+=== N2 / gemma3-12b-classif (gemma3:12b) — 09:15:54
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1278s, 2296 tok (12.8 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1278s, 2361 tok (12.8 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1279s, 2384 tok (12.8 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1285s, 2440 tok (12.8 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1266s, 2212 tok (12.9 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1270s, 2258 tok (12.9 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1268s, 2245 tok (12.8 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1268s, 2242 tok (12.9 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1270s, 2263 tok (12.9 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1275s, 2311 tok (12.8 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1277s, 2334 tok (12.8 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1274s, 2298 tok (12.8 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1275s, 2309 tok (12.8 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1272s, 2313 tok (12.9 tok/s) [cache]
+→ transcripts/N2/gemma3-12b-classif ; results/runs/N2/gemma3-12b-classif.json
+=== N2 / churro-3b (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 09:16:05
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 987s, 2865 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 950s, 2991 tok (40.6 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 955s, 2940 tok (40.1 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 971s, 2989 tok (39.4 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 969s, 2868 tok (39.5 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 966s, 2858 tok (39.4 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 965s, 2900 tok (39.4 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 963s, 2791 tok (39.5 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 964s, 2796 tok (39.4 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 967s, 2934 tok (39.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1021s, 2948 tok (34.9 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1045s, 2887 tok (33.2 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1049s, 2929 tok (33.2 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1050s, 2926 tok (33.2 tok/s) [cache]
+→ transcripts/N2/churro-3b ; results/runs/N2/churro-3b.json
+=== N2 / churro-3b-classif (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 09:16:13
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 915s, 2762 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 884s, 2891 tok (40.5 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 888s, 2840 tok (40.1 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 903s, 2889 tok (39.3 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 901s, 2768 tok (39.4 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 898s, 2758 tok (39.4 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 897s, 2800 tok (39.4 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 896s, 2691 tok (39.5 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 897s, 2696 tok (39.3 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 899s, 2834 tok (39.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 951s, 2845 tok (34.8 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 973s, 2787 tok (33.1 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 976s, 2829 tok (33.0 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 976s, 2826 tok (33.3 tok/s) [cache]
+→ transcripts/N2/churro-3b-classif ; results/runs/N2/churro-3b-classif.json
+=== N2 / churro-3b-ctx (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 09:16:23
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1901s, 2966 tok (34.7 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1931s, 3035 tok (32.9 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1919s, 2997 tok (33.2 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1883s, 3088 tok (34.5 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1828s, 2932 tok (37.7 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1827s, 2949 tok (37.9 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1896s, 2953 tok (34.5 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1939s, 2887 tok (32.9 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1929s, 2805 tok (32.5 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 2174s, 3006 tok (31.0 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1873s, 3062 tok (35.2 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=KO, 1782s, 3014 tok (38.0 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1776s, 3016 tok (38.1 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1783s, 3016 tok (37.9 tok/s)
+→ transcripts/N2/churro-3b-ctx ; results/runs/N2/churro-3b-ctx.json
+=== N2 / qwen3-vl-8b-ctx (qwen3-vl:8b-instruct) — 16:39:18
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 3056s, 2598 tok (21.0 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 3050s, 2670 tok (21.0 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 3092s, 2652 tok (20.5 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 3383s, 2717 tok (17.2 tok/s)
+=== N2 / qwen3-vl-8b (qwen3-vl:8b-instruct) — 22:16:59
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1716s, 2619 tok (20.0 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1614s, 2718 tok (22.5 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1611s, 2670 tok (22.4 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1766s, 2737 tok (19.1 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1742s, 2608 tok (19.7 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1624s, 2613 tok (22.2 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1620s, 2618 tok (22.3 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1620s, 2537 tok (22.3 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1670s, 2563 tok (20.7 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1621s, 2645 tok (22.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1626s, 2676 tok (22.3 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1621s, 2613 tok (22.3 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1628s, 2660 tok (22.2 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1625s, 2633 tok (22.3 tok/s) [cache]
+→ transcripts/N2/qwen3-vl-8b ; results/runs/N2/qwen3-vl-8b.json
+=== N2 / qwen3-vl-8b-classif (qwen3-vl:8b-instruct) — 22:17:10
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1598s, 2519 tok (19.9 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1501s, 2618 tok (22.4 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1497s, 2570 tok (22.3 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1642s, 2637 tok (19.0 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1621s, 2508 tok (19.7 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1508s, 2513 tok (22.2 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1505s, 2518 tok (22.2 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1506s, 2437 tok (22.3 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1552s, 2463 tok (20.6 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1506s, 2545 tok (22.2 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1512s, 2576 tok (22.2 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1508s, 2513 tok (22.2 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1513s, 2560 tok (22.1 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1510s, 2533 tok (22.2 tok/s) [cache]
+→ transcripts/N2/qwen3-vl-8b-classif ; results/runs/N2/qwen3-vl-8b-classif.json
+=== N2 / gemma3-12b (gemma3:12b) — 22:17:24
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1372s, 2396 tok (12.9 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1372s, 2461 tok (12.8 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1373s, 2484 tok (12.8 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1378s, 2540 tok (12.8 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1359s, 2312 tok (12.9 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1364s, 2358 tok (12.9 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1362s, 2345 tok (12.9 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1361s, 2342 tok (12.9 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1364s, 2363 tok (12.9 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1369s, 2411 tok (12.8 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1370s, 2434 tok (12.9 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1367s, 2398 tok (12.9 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1368s, 2409 tok (12.9 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1365s, 2413 tok (13.0 tok/s) [cache]
+→ transcripts/N2/gemma3-12b ; results/runs/N2/gemma3-12b.json
+=== N2 / gemma3-12b-classif (gemma3:12b) — 22:17:34
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1278s, 2296 tok (12.8 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1278s, 2361 tok (12.8 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1279s, 2384 tok (12.8 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1285s, 2440 tok (12.8 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1266s, 2212 tok (12.9 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1270s, 2258 tok (12.9 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1268s, 2245 tok (12.8 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1268s, 2242 tok (12.9 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1270s, 2263 tok (12.9 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1275s, 2311 tok (12.8 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1277s, 2334 tok (12.8 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1274s, 2298 tok (12.8 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1275s, 2309 tok (12.8 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1272s, 2313 tok (12.9 tok/s) [cache]
+→ transcripts/N2/gemma3-12b-classif ; results/runs/N2/gemma3-12b-classif.json
+=== N2 / churro-3b (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 22:17:49
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 987s, 2865 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 950s, 2991 tok (40.6 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 955s, 2940 tok (40.1 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 971s, 2989 tok (39.4 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 969s, 2868 tok (39.5 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 966s, 2858 tok (39.4 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 965s, 2900 tok (39.4 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 963s, 2791 tok (39.5 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 964s, 2796 tok (39.4 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 967s, 2934 tok (39.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1021s, 2948 tok (34.9 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1045s, 2887 tok (33.2 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1049s, 2929 tok (33.2 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1050s, 2926 tok (33.2 tok/s) [cache]
+→ transcripts/N2/churro-3b ; results/runs/N2/churro-3b.json
+=== N2 / churro-3b-classif (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 22:18:00
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 915s, 2762 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 884s, 2891 tok (40.5 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 888s, 2840 tok (40.1 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 903s, 2889 tok (39.3 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 901s, 2768 tok (39.4 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 898s, 2758 tok (39.4 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 897s, 2800 tok (39.4 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 896s, 2691 tok (39.5 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 897s, 2696 tok (39.3 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 899s, 2834 tok (39.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 951s, 2845 tok (34.8 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 973s, 2787 tok (33.1 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 976s, 2829 tok (33.0 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 976s, 2826 tok (33.3 tok/s) [cache]
+→ transcripts/N2/churro-3b-classif ; results/runs/N2/churro-3b-classif.json
+=== N2 / churro-3b-ctx (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 22:18:13
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1901s, 2966 tok (34.7 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1931s, 3035 tok (32.9 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1919s, 2997 tok (33.2 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1883s, 3088 tok (34.5 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1828s, 2932 tok (37.7 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1827s, 2949 tok (37.9 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1896s, 2953 tok (34.5 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1939s, 2887 tok (32.9 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1929s, 2805 tok (32.5 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 2174s, 3006 tok (31.0 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1873s, 3062 tok (35.2 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=KO, 1782s, 3014 tok (38.0 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1776s, 3016 tok (38.1 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1783s, 3016 tok (37.9 tok/s) [cache]
+→ transcripts/N2/churro-3b-ctx ; results/runs/N2/churro-3b-ctx.json
+=== N2 / qwen3-vl-8b-ctx (qwen3-vl:8b-instruct) — 22:20:00
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 3056s, 2598 tok (21.0 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 3050s, 2670 tok (21.0 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 3092s, 2652 tok (20.5 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 3383s, 2717 tok (17.2 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 3814s, 2591 tok (14.3 tok/s)
+=== N2 / qwen3-vl-8b (qwen3-vl:8b-instruct) — 22:54:26
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1716s, 2619 tok (20.0 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1614s, 2718 tok (22.5 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1611s, 2670 tok (22.4 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1766s, 2737 tok (19.1 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1742s, 2608 tok (19.7 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1624s, 2613 tok (22.2 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1620s, 2618 tok (22.3 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1620s, 2537 tok (22.3 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1670s, 2563 tok (20.7 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1621s, 2645 tok (22.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1626s, 2676 tok (22.3 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1621s, 2613 tok (22.3 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1628s, 2660 tok (22.2 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1625s, 2633 tok (22.3 tok/s) [cache]
+→ transcripts/N2/qwen3-vl-8b ; results/runs/N2/qwen3-vl-8b.json
+=== N2 / qwen3-vl-8b-classif (qwen3-vl:8b-instruct) — 22:54:39
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1598s, 2519 tok (19.9 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1501s, 2618 tok (22.4 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1497s, 2570 tok (22.3 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1642s, 2637 tok (19.0 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1621s, 2508 tok (19.7 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1508s, 2513 tok (22.2 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1505s, 2518 tok (22.2 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1506s, 2437 tok (22.3 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1552s, 2463 tok (20.6 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1506s, 2545 tok (22.2 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1512s, 2576 tok (22.2 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1508s, 2513 tok (22.2 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1513s, 2560 tok (22.1 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1510s, 2533 tok (22.2 tok/s) [cache]
+→ transcripts/N2/qwen3-vl-8b-classif ; results/runs/N2/qwen3-vl-8b-classif.json
+=== N2 / gemma3-12b (gemma3:12b) — 22:54:55
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1372s, 2396 tok (12.9 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1372s, 2461 tok (12.8 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1373s, 2484 tok (12.8 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1378s, 2540 tok (12.8 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1359s, 2312 tok (12.9 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1364s, 2358 tok (12.9 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1362s, 2345 tok (12.9 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1361s, 2342 tok (12.9 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1364s, 2363 tok (12.9 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1369s, 2411 tok (12.8 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1370s, 2434 tok (12.9 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1367s, 2398 tok (12.9 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1368s, 2409 tok (12.9 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1365s, 2413 tok (13.0 tok/s) [cache]
+→ transcripts/N2/gemma3-12b ; results/runs/N2/gemma3-12b.json
+=== N2 / gemma3-12b-classif (gemma3:12b) — 22:55:05
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1278s, 2296 tok (12.8 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1278s, 2361 tok (12.8 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1279s, 2384 tok (12.8 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1285s, 2440 tok (12.8 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1266s, 2212 tok (12.9 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1270s, 2258 tok (12.9 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1268s, 2245 tok (12.8 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1268s, 2242 tok (12.9 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1270s, 2263 tok (12.9 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 1275s, 2311 tok (12.8 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1277s, 2334 tok (12.8 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1274s, 2298 tok (12.8 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1275s, 2309 tok (12.8 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1272s, 2313 tok (12.9 tok/s) [cache]
+→ transcripts/N2/gemma3-12b-classif ; results/runs/N2/gemma3-12b-classif.json
+=== N2 / churro-3b (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 22:55:16
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 987s, 2865 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 950s, 2991 tok (40.6 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 955s, 2940 tok (40.1 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 971s, 2989 tok (39.4 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 969s, 2868 tok (39.5 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 966s, 2858 tok (39.4 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 965s, 2900 tok (39.4 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 963s, 2791 tok (39.5 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 964s, 2796 tok (39.4 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 967s, 2934 tok (39.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1021s, 2948 tok (34.9 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 1045s, 2887 tok (33.2 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1049s, 2929 tok (33.2 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1050s, 2926 tok (33.2 tok/s) [cache]
+→ transcripts/N2/churro-3b ; results/runs/N2/churro-3b.json
+=== N2 / churro-3b-classif (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 22:55:24
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 915s, 2762 tok (40.4 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 884s, 2891 tok (40.5 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 888s, 2840 tok (40.1 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 903s, 2889 tok (39.3 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 901s, 2768 tok (39.4 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 898s, 2758 tok (39.4 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 897s, 2800 tok (39.4 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 896s, 2691 tok (39.5 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 897s, 2696 tok (39.3 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 899s, 2834 tok (39.3 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 951s, 2845 tok (34.8 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 973s, 2787 tok (33.1 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 976s, 2829 tok (33.0 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 976s, 2826 tok (33.3 tok/s) [cache]
+→ transcripts/N2/churro-3b-classif ; results/runs/N2/churro-3b-classif.json
+=== N2 / churro-3b-ctx (hf.co/mradermacher/churro-3B-GGUF:Q8_0) — 22:55:34
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 1901s, 2966 tok (34.7 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 1931s, 3035 tok (32.9 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 1919s, 2997 tok (33.2 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 1883s, 3088 tok (34.5 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 1828s, 2932 tok (37.7 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 1827s, 2949 tok (37.9 tok/s) [cache]
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 1896s, 2953 tok (34.5 tok/s) [cache]
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 1939s, 2887 tok (32.9 tok/s) [cache]
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 1929s, 2805 tok (32.5 tok/s) [cache]
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 2174s, 3006 tok (31.0 tok/s) [cache]
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 1873s, 3062 tok (35.2 tok/s) [cache]
+[12/14] 1491_W_1 (13): 10 lignes, json=KO, 1782s, 3014 tok (38.0 tok/s) [cache]
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 1776s, 3016 tok (38.1 tok/s) [cache]
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 1783s, 3016 tok (37.9 tok/s) [cache]
+→ transcripts/N2/churro-3b-ctx ; results/runs/N2/churro-3b-ctx.json
+=== N2 / qwen3-vl-8b-ctx (qwen3-vl:8b-instruct) — 22:56:58
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 3056s, 2598 tok (21.0 tok/s) [cache]
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 3050s, 2670 tok (21.0 tok/s) [cache]
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 3092s, 2652 tok (20.5 tok/s) [cache]
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 3383s, 2717 tok (17.2 tok/s) [cache]
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 3814s, 2591 tok (14.3 tok/s) [cache]
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 3387s, 2587 tok (18.4 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 3042s, 2619 tok (20.9 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 3059s, 2529 tok (20.9 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 3073s, 2523 tok (20.5 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 3062s, 2648 tok (20.8 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 3049s, 2679 tok (20.9 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 2997s, 2590 tok (21.0 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 2995s, 2637 tok (21.1 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 2990s, 2602 tok (21.1 tok/s)
+→ transcripts/N2/qwen3-vl-8b-ctx ; results/runs/N2/qwen3-vl-8b-ctx.json
+=== N2 / gemma3-12b-ctx (gemma3:12b) — 06:23:48
+[1/14] 1491_W_1 (1): 10 lignes, json=ok, 2266s, 2373 tok (12.2 tok/s)
+[2/14] 1491_W_1 (2): 10 lignes, json=ok, 2264s, 2431 tok (12.2 tok/s)
+[3/14] 1491_W_1 (4): 10 lignes, json=ok, 2266s, 2443 tok (12.2 tok/s)
+[4/14] 1491_W_1 (5): 10 lignes, json=ok, 2272s, 2515 tok (12.2 tok/s)
+[5/14] 1491_W_1 (6): 10 lignes, json=ok, 2265s, 2325 tok (12.2 tok/s)
+[6/14] 1491_W_1 (7): 10 lignes, json=ok, 2383s, 2291 tok (11.1 tok/s)
+[7/14] 1491_W_1 (8): 10 lignes, json=ok, 2365s, 2330 tok (11.3 tok/s)
+[8/14] 1491_W_1 (9): 10 lignes, json=ok, 2324s, 2258 tok (11.6 tok/s)
+[9/14] 1491_W_1 (10): 10 lignes, json=ok, 2548s, 2361 tok (10.9 tok/s)
+[10/14] 1491_W_1 (11): 10 lignes, json=ok, 2261s, 2418 tok (12.4 tok/s)
+[11/14] 1491_W_1 (12): 10 lignes, json=ok, 2245s, 2415 tok (12.4 tok/s)
+[12/14] 1491_W_1 (13): 10 lignes, json=ok, 2703s, 2391 tok (10.0 tok/s)
+[13/14] 1491_W_1 (14): 10 lignes, json=ok, 2592s, 2419 tok (10.3 tok/s)
+[14/14] 1491_W_1 (15): 10 lignes, json=ok, 2599s, 2406 tok (10.2 tok/s)
+→ transcripts/N2/gemma3-12b-ctx ; results/runs/N2/gemma3-12b-ctx.json
+N0/churro-3b: 107/140 lignes, 1403 cellules erronées
+N0/gemma3-12b: 122/140 lignes, 2291 cellules erronées
+N0/qwen3-vl-8b: 140/140 lignes, 1090 cellules erronées
+N1/churro-3b: 140/140 lignes, 875 cellules erronées
+N1/churro-3b-demi: 140/140 lignes, 821 cellules erronées
+N1/gemma3-12b: 140/140 lignes, 2157 cellules erronées
+N1/gemma3-12b-demi: 140/140 lignes, 1503 cellules erronées
+N1/qwen3-vl-8b: 140/140 lignes, 1041 cellules erronées
+N1/qwen3-vl-8b-demi: 140/140 lignes, 920 cellules erronées
+N2/churro-3b: 140/140 lignes, 857 cellules erronées
+N2/churro-3b-classif: 140/140 lignes, 862 cellules erronées
+N2/churro-3b-ctx: 140/140 lignes, 790 cellules erronées
+N2/gemma3-12b: 140/140 lignes, 720 cellules erronées
+N2/gemma3-12b-classif: 140/140 lignes, 713 cellules erronées
+N2/gemma3-12b-ctx: 140/140 lignes, 781 cellules erronées
+N2/qwen3-vl-8b: 140/140 lignes, 730 cellules erronées
+N2/qwen3-vl-8b-classif: 140/140 lignes, 737 cellules erronées
+N2/qwen3-vl-8b-ctx: 140/140 lignes, 714 cellules erronées
+→ /Users/michel/Dev/htr-test-julie/results/metrics.csv, summary.csv, errors.csv, summary.md

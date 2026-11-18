@@ -8,6 +8,7 @@ Entrée : les crops de cellules de la segmentation (`data/cells/<photo>/rNN/<col
 - Catégorie médicale : appel de modèle (`categorie_medicale: vlm`) ou petit classifieur d'images
   (`classifier`, entraîné sur le gold sans la photo traitée).
 - Variante `context: true` : la demi-ligne de la case est jointe comme seconde image.
+- `prompts_dir` (option `--prompts` de htr.run) : un fichier de ce dossier remplace le prompt de même nom.
 """
 from __future__ import annotations
 
@@ -49,6 +50,13 @@ def clean(v) -> str:
     return " ".join(str(v).split())
 
 
+def prompt_path(cfg: dict, rel: str) -> Path:
+    """Fichier de prompt : version de `prompts_dir` si elle existe, sinon celle de la config."""
+    if cfg.get("prompts_dir") and (alt := ROOT / cfg["prompts_dir"] / Path(rel).name).exists():
+        return alt
+    return ROOT / rel
+
+
 class N2Cellule(Strategy):
     name = "N2"
 
@@ -58,11 +66,14 @@ class N2Cellule(Strategy):
         vocab = load_yaml(cfg["vocab_file"])
         seg_cfg = load_yaml(cfg.get("segmentation_config", "configs/segmentation.yaml"))
         self.side = {col: side for side, cols in seg_cfg["columns"].items() for col in cols}
-        header = (ROOT / cfg["prompts"]["entete"]).read_text(encoding="utf-8")
+        if cfg.get("prompts_dir") and not (ROOT / cfg["prompts_dir"]).is_dir():
+            raise FileNotFoundError(f"dossier de prompts introuvable : {cfg['prompts_dir']}")
+        header = prompt_path(cfg, cfg["prompts"]["entete"]).read_text(encoding="utf-8")
         image_desc = cfg["prompts"]["image_contexte" if cfg.get("context") else "image_seule"]
         self.prompts, self.schemas = {}, {}
         for col, spec in self.cells.items():
-            consigne = (ROOT / spec["prompt"]).read_text(encoding="utf-8").strip()
+            path = prompt_path(cfg, spec["prompt"])
+            consigne = path.read_text(encoding="utf-8").strip()
             props = {}
             for name, f in spec["fields"].items():
                 prop = {"type": "string"}
@@ -72,6 +83,8 @@ class N2Cellule(Strategy):
                 props[name] = {"type": "array", "items": prop} if f.get("array") else prop
             self.prompts[col] = header.replace("{image}", image_desc).replace("{consigne}", consigne)
             self.schemas[col] = {"type": "object", "properties": props, "required": list(props)}
+            # trace dans results/runs : fichier utilisé et prompt complet envoyé, pour comparer les versions
+            cfg.setdefault("prompts_used", {})[col] = {"file": str(path.relative_to(ROOT)), "text": self.prompts[col]}
         self.cells_dir = ROOT / cfg.get("cells_dir", "data/cells")
         self.rows_dir = ROOT / cfg.get("rows_dir", "data/rows")
         self.seg_dir = ROOT / cfg.get("segmentation_dir", "data/segmentation")

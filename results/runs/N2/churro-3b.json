@@ -57,7 +57,65 @@
       "num_ctx": 4096,
       "seed": 42
     },
-    "_path": "configs/N2/churro-3b.yaml"
+    "_path": "configs/N2/churro-3b.yaml",
+    "prompts_used": {
+      "numero": {
+        "file": "configs/prompts/n2/numero.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « N° d'ordre » : un numéro d'ordre écrit à la main.\nRenvoie {\"numero\": \"...\"} : uniquement les chiffres, sans espace ni ponctuation.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "noms_prenoms": {
+        "file": "configs/prompts/n2/noms_prenoms.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Noms et prénoms », sur deux lignes : en haut le nom de famille, écrit en grand ; en dessous le ou les prénoms, plus petits.\nRenvoie {\"nom\": \"...\", \"prenoms\": \"...\"}.\nCe sont des noms propres : lis-les lettre par lettre et ne les remplace pas par un nom plus courant qui leur ressemble. Écris-les avec une majuscule initiale, le reste en minuscules.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "profession": {
+        "file": "configs/prompts/n2/profession.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Profession » : un mot ou une courte expression.\nRenvoie {\"profession\": \"...\"}, avec une majuscule initiale.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "naissance": {
+        "file": "configs/prompts/n2/naissance.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Date et lieu de naissance », sur trois lignes : 1) la date ; 2) la commune, souvent précédée de « à » ; 3) le département, ou pour une naissance hors de France, le pays ou la province.\nRenvoie {\"date_naissance\": \"...\", \"lieu_naissance\": \"...\", \"departement_naissance\": \"...\", \"pays\": \"...\"} :\n- date_naissance : au format JJ/MM/AAAA, jour et mois en chiffres sur deux positions (un mois écrit en lettres est converti en chiffres), année telle qu'elle est écrite ;\n- lieu_naissance : la commune, sans le « à » ;\n- departement_naissance : le département, abréviations évidentes développées, nom de l'époque conservé tel qu'écrit (ne le modernise pas) ; \"\" si la naissance est hors de France ;\n- pays : « France » si un département français est indiqué, sinon le pays écrit.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "etat_civil": {
+        "file": "configs/prompts/n2/etat_civil.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « État civil » (Marié ou Célibataire) : en général une seule lettre manuscrite, souvent suivie d'un point. C = célibataire, M = marié, V = veuf ; parfois un mot (divorcé, séparé).\nRenvoie {\"etat_civil\": \"...\"} avec la valeur autorisée qui correspond à ce qui est écrit.\nValeurs autorisées pour etat_civil : « C » ; « M » ; « V » ; « Divorcé » ; « Séparé ».\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "admis_au_titre_de": {
+        "file": "configs/prompts/n2/admis_au_titre_de.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Admis au titre de » : l'organisme qui prend en charge le séjour (« A.M.G. » = Assistance médicale gratuite), en général suivi, sur la ligne suivante, d'un département ou d'une ville.\nRenvoie {\"organismes\": [...], \"complement\": \"...\"} :\n- organismes : le ou les organismes écrits, dans l'ordre, choisis parmi les valeurs autorisées ;\n- complement : le reste du texte (département, ville), abréviations évidentes de départements développées, nom de l'époque conservé. Si un organisme écrit n'a pas d'équivalent dans les valeurs autorisées, mets-le dans complement tel qu'écrit.\nValeurs autorisées pour organismes : « AMG » ; « AMG État » ; « Assistance publique de Paris » ; « Office public d'hygiène de la Seine » ; « Office d'hygiène de la Seine » ; « Assistance sociale » ; « Assurance sociale » ; « Dispensaire » ; « Comité d'hygiène sociale » ; « Pupille de la nation » ; « Art 64 » ; « Payant ».\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "venant_de": {
+        "file": "configs/prompts/n2/venant_de.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Venant de » : la provenance du malade (son domicile, un hôpital, un sanatorium…).\nRenvoie {\"venant_de\": \"...\"} : le texte tel qu'écrit, sur une seule ligne, avec une majuscule initiale.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "religion": {
+        "file": "configs/prompts/n2/religion.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Religion » : un mot, parfois abrégé.\nRenvoie {\"religion\": \"...\"} avec la valeur autorisée qui correspond à ce qui est écrit.\nValeurs autorisées pour religion : « Catholique » ; « Protestant » ; « Israélite » ; « Musulman » ; « Sans religion ».\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "adresse": {
+        "file": "configs/prompts/n2/adresse.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Adresse des malades ou de leur famille », sur plusieurs lignes : destinataire, rue ou lieu-dit, commune, département.\nRenvoie {\"adresse\": \"...\"} : toutes les lignes dans l'ordre, sur une seule ligne, séparées par des virgules. N'ajoute rien qui ne soit écrit, ne répète aucune ligne.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "categorie_medicale": {
+        "file": "configs/prompts/n2/categorie_medicale.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Catégorie médicale » : un seul symbole manuscrit, parfois suivi d'un point. Il y a deux symboles : l'un ressemble à la lettre P (parfois en forme de triangle ou de crochet, barré d'un trait vertical) ; l'autre ressemble à la lettre O (un ovale, parfois avec une boucle ou un trait à l'intérieur).\nRenvoie {\"categorie_medicale\": \"...\"} : la lettre qui correspond au symbole.\nValeurs autorisées pour categorie_medicale : « P » ; « O ».\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "date_entree": {
+        "file": "configs/prompts/n2/date_entree.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Date d'entrée » : une date écrite en chiffres, par exemple 14/3/36.\nRenvoie {\"date_entree\": \"...\"} au format JJ/MM/AA : jour et mois en chiffres sur deux positions, année telle qu'elle est écrite (une année sur deux chiffres reste sur deux chiffres, ne la transforme jamais en 20xx).\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "date_sortie": {
+        "file": "configs/prompts/n2/date_sortie.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Date de sortie » : une date écrite en chiffres, par exemple 14/3/36.\nRenvoie {\"date_sortie\": \"...\"} au format JJ/MM/AA : jour et mois en chiffres sur deux positions, année telle qu'elle est écrite (une année sur deux chiffres reste sur deux chiffres, ne la transforme jamais en 20xx).\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "nb_journees": {
+        "file": "configs/prompts/n2/nb_journees.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Nombre de journées » : un nombre entier écrit à la main.\nRenvoie {\"nb_journees\": \"...\"} : uniquement les chiffres.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      },
+      "observations": {
+        "file": "configs/prompts/n2/observations.fr.txt",
+        "text": "Tu es un archiviste paléographe. Le document est un registre d'entrée et de sortie d'un sanatorium français (années 1930) : un tableau imprimé, rempli à la main, dont chaque ligne correspond à un malade. L'image montre une seule case de ce tableau.\n\nCase « Observations du médecin-directeur » : quelques lignes en écriture cursive, à l'encre bleue.\nRenvoie {\"observations\": \"...\"} : le texte sur une seule ligne, dans l'ordre de lecture. Si un mot est illisible, écris ce que tu lis ; ne complète jamais par des phrases inventées et ne répète aucune phrase.\n\nRègles :\n- Transcris ce qui est écrit, sans corriger ni compléter de mémoire. Ne devine pas : si un mot est difficile à lire, écris ce que tu lis réellement.\n- Une case vide donne une chaîne vide \"\". N'invente jamais de contenu pour une case vide.\n- Le texte qui déborde d'une case voisine (à gauche, à droite, au-dessus ou au-dessous) ne fait pas partie de la case.\n\nRéponds uniquement par l'objet JSON.\n"
+      }
+    }
   },
   "client": {
     "backend": "ollama",
@@ -81,10 +139,11 @@
     "digest": "782efb5447cee3c10303036af639f9ca1ed373a48331093e22d41c88e9bad197",
     "size": 4133245493
   },
-  "git_commit": "3cfaf5a4296ec88d763c8e37d62c532791304917-dirty",
+  "prompts_dir": null,
+  "git_commit": "57fa173c627c88420020208aaa9c18cab83795ed-dirty",
   "python": "3.12.13",
   "platform": "macOS-15.4.1-arm64-arm-64bit",
-  "started": "2026-11-15T17:46:18",
+  "started": "2026-11-17T22:55:16",
   "input": "gold/photos",
   "photos": [
     {
@@ -92,7 +151,7 @@
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 0.58,
+      "wall_s": 0.54,
       "cached": true,
       "calls": 140,
       "model_s": 986.63,
@@ -242,15 +301,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (2)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 951.53,
-      "cached": false,
+      "wall_s": 0.61,
+      "cached": true,
       "calls": 140,
       "model_s": 950.2,
       "prompt_tokens": 190324,
@@ -399,15 +458,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (4)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 956.18,
-      "cached": false,
+      "wall_s": 0.54,
+      "cached": true,
       "calls": 140,
       "model_s": 954.88,
       "prompt_tokens": 190036,
@@ -556,15 +615,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (5)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 972.53,
-      "cached": false,
+      "wall_s": 0.51,
+      "cached": true,
       "calls": 140,
       "model_s": 971.22,
       "prompt_tokens": 190149,
@@ -713,15 +772,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (6)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 970.18,
-      "cached": false,
+      "wall_s": 0.5,
+      "cached": true,
       "calls": 140,
       "model_s": 968.89,
       "prompt_tokens": 190504,
@@ -870,15 +929,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (7)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 967.14,
-      "cached": false,
+      "wall_s": 0.54,
+      "cached": true,
       "calls": 140,
       "model_s": 965.87,
       "prompt_tokens": 190068,
@@ -1027,15 +1086,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (8)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 965.91,
-      "cached": false,
+      "wall_s": 0.59,
+      "cached": true,
       "calls": 140,
       "model_s": 964.61,
       "prompt_tokens": 189721,
@@ -1184,15 +1243,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (9)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 964.24,
-      "cached": false,
+      "wall_s": 0.53,
+      "cached": true,
       "calls": 140,
       "model_s": 963.0,
       "prompt_tokens": 190037,
@@ -1341,15 +1400,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (10)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 965.26,
-      "cached": false,
+      "wall_s": 0.51,
+      "cached": true,
       "calls": 140,
       "model_s": 963.98,
       "prompt_tokens": 189875,
@@ -1498,15 +1557,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (11)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 968.13,
-      "cached": false,
+      "wall_s": 0.51,
+      "cached": true,
       "calls": 140,
       "model_s": 966.85,
       "prompt_tokens": 189647,
@@ -1655,15 +1714,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (12)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 1022.91,
-      "cached": false,
+      "wall_s": 0.58,
+      "cached": true,
       "calls": 140,
       "model_s": 1021.4,
       "prompt_tokens": 190071,
@@ -1812,15 +1871,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (13)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 1046.57,
-      "cached": false,
+      "wall_s": 0.56,
+      "cached": true,
       "calls": 140,
       "model_s": 1044.93,
       "prompt_tokens": 189911,
@@ -1969,15 +2028,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (14)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 1050.98,
-      "cached": false,
+      "wall_s": 0.53,
+      "cached": true,
       "calls": 140,
       "model_s": 1049.39,
       "prompt_tokens": 190343,
@@ -2126,15 +2185,15 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     },
     {
       "photo": "1491_W_1 (15)",
       "n_rows": 10,
       "json_valid": true,
       "error": null,
-      "wall_s": 1051.59,
-      "cached": false,
+      "wall_s": 0.55,
+      "cached": true,
       "calls": 140,
       "model_s": 1049.96,
       "prompt_tokens": 190246,
@@ -2283,9 +2342,9 @@
         "stop"
       ],
       "warnings": [],
-      "memory_bytes": 4045815151
+      "memory_bytes": null
     }
   ],
-  "finished": "2026-11-15T21:20:32",
-  "peak_memory_bytes": 4045815151
+  "finished": "2026-11-17T22:55:24",
+  "peak_memory_bytes": null
 }

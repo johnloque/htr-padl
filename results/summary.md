@@ -15,6 +15,15 @@ Seuils provisoires : exactitude ≥ 95% (champs fermés, numériques, dates) ; C
 | N1 | gemma3-12b-demi | 92.9 | 140/140 | 0 | 0.7 | 43.6 | 11.8 | 7.9 | 60.5 | ❌ | ❌ |
 | N1 | qwen3-vl-8b | 92.9 | 140/140 | 0 | 6.4 | 28.8 | 18.9 | 6.7 | 39.9 | ❌ | ❌ |
 | N1 | qwen3-vl-8b-demi | 100.0 | 140/140 | 0 | 5.7 | 37.4 | 21.1 | 6.4 | 52.0 | ❌ | ❌ |
+| N2 | churro-3b | 100.0 | 140/140 | 0 | 16.4 | 98.7 | 37.7 | – | 137.1 | ❌ | ❌ |
+| N2 | churro-3b-classif | 100.0 | 140/140 | 0 | 15.0 | 91.8 | 37.7 | – | 127.5 | ❌ | ❌ |
+| N2 | churro-3b-ctx | 92.9 | 140/140 | 0 | 21.4 | 188.9 | 34.9 | – | 262.3 | ❌ | ❌ |
+| N2 | gemma3-12b | 100.0 | 140/140 | 0 | 27.9 | 136.7 | 12.9 | – | 189.9 | ❌ | ❌ |
+| N2 | gemma3-12b-classif | 100.0 | 140/140 | 0 | 25.7 | 127.4 | 12.8 | – | 177.0 | ❌ | ❌ |
+| N2 | gemma3-12b-ctx | 100.0 | 140/140 | 0 | 30.7 | 238.2 | 11.5 | 7.0 | 330.9 | ❌ | ❌ |
+| N2 | qwen3-vl-8b | 100.0 | 140/140 | 0 | 33.6 | 165.0 | 21.5 | – | 229.2 | ❌ | ❌ |
+| N2 | qwen3-vl-8b-classif | 100.0 | 140/140 | 0 | 31.4 | 153.4 | 21.5 | – | 213.1 | ❌ | ❌ |
+| N2 | qwen3-vl-8b-ctx | 100.0 | 140/140 | 0 | 33.6 | 307.3 | 20.6 | 5.2 | 426.8 | ❌ | ❌ |
 
 ## N0 — churro-3b
 
@@ -222,3 +231,210 @@ Seuils provisoires : exactitude ≥ 95% (champs fermés, numériques, dates) ; C
 | date_sortie | date | 81.4 | 36.4 | 32.8 | – (0) | 2.1 |
 | nb_journees | numerique | 84.3 | 11.2 | 11.2 | 0.0 (2) | 1.4 |
 | observations | texte_long | 16.4 | 17.9 | 14.4 | – (0) | 0.0 |
+
+## N2 — churro-3b
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 78.6 | 8.0 | 6.6 | – (0) | 0.0 |
+| nom | texte_court | 58.6 | 18.4 | 16.5 | – (0) | 0.0 |
+| prenoms | texte_court | 86.4 | 18.7 | 12.9 | – (0) | 1.4 |
+| profession | texte_court | 54.3 | 25.5 | 24.2 | – (0) | 0.0 |
+| date_naissance | date | 88.6 | 35.1 | 26.4 | 0.0 (1) | 0.0 |
+| lieu_naissance | texte_court | 25.0 | 68.4 | 62.3 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 71.4 | 32.1 | 29.8 | 0.0 (8) | 22.7 |
+| pays | ferme | 57.1 | 43.7 | 43.5 | – (0) | 41.4 |
+| etat_civil | ferme | 91.4 | 18.0 | 16.8 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 73.6 | 27.3 | 25.4 | – (0) | 0.0 |
+| venant_de | texte_court | 72.1 | 28.7 | 25.5 | – (0) | 0.0 |
+| religion | ferme | 98.6 | 1.4 | 1.4 | – (0) | 0.0 |
+| adresse | texte_long | 1.4 | 34.7 | 26.1 | – (0) | 0.0 |
+| categorie_medicale | ferme | 92.1 | 7.9 | 7.9 | – (0) | 0.0 |
+| date_entree | date | 70.0 | 14.9 | 14.6 | – (0) | 0.0 |
+| date_sortie | date | 65.0 | 34.8 | 33.7 | – (0) | 0.0 |
+| nb_journees | numerique | 81.4 | 18.3 | 11.7 | 100.0 (2) | 0.0 |
+| observations | texte_long | 22.1 | 19.8 | 16.6 | – (0) | 0.0 |
+
+## N2 — churro-3b-classif
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 78.6 | 8.0 | 6.6 | – (0) | 0.0 |
+| nom | texte_court | 58.6 | 18.4 | 16.5 | – (0) | 0.0 |
+| prenoms | texte_court | 86.4 | 18.7 | 12.9 | – (0) | 1.4 |
+| profession | texte_court | 54.3 | 25.5 | 24.2 | – (0) | 0.0 |
+| date_naissance | date | 88.6 | 35.1 | 26.4 | 0.0 (1) | 0.0 |
+| lieu_naissance | texte_court | 25.0 | 68.4 | 62.3 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 71.4 | 32.1 | 29.8 | 0.0 (8) | 22.7 |
+| pays | ferme | 57.1 | 43.7 | 43.5 | – (0) | 41.4 |
+| etat_civil | ferme | 91.4 | 18.0 | 16.8 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 73.6 | 27.3 | 25.4 | – (0) | 0.0 |
+| venant_de | texte_court | 72.1 | 28.7 | 25.5 | – (0) | 0.0 |
+| religion | ferme | 98.6 | 1.4 | 1.4 | – (0) | 0.0 |
+| adresse | texte_long | 1.4 | 34.7 | 26.1 | – (0) | 0.0 |
+| categorie_medicale | ferme | 88.6 | 11.4 | 11.4 | – (0) | 0.0 |
+| date_entree | date | 70.0 | 14.9 | 14.6 | – (0) | 0.0 |
+| date_sortie | date | 65.0 | 34.8 | 33.7 | – (0) | 0.0 |
+| nb_journees | numerique | 81.4 | 18.3 | 11.7 | 100.0 (2) | 0.0 |
+| observations | texte_long | 22.1 | 19.8 | 16.6 | – (0) | 0.0 |
+
+## N2 — churro-3b-ctx
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 88.6 | 4.6 | 3.0 | – (0) | 0.0 |
+| nom | texte_court | 68.6 | 11.3 | 10.1 | – (0) | 0.0 |
+| prenoms | texte_court | 92.9 | 10.8 | 4.8 | – (0) | 0.0 |
+| profession | texte_court | 65.7 | 15.6 | 14.0 | – (0) | 0.0 |
+| date_naissance | date | 88.6 | 29.9 | 22.2 | 0.0 (1) | 0.0 |
+| lieu_naissance | texte_court | 4.3 | 125.8 | 117.6 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 79.3 | 21.9 | 19.8 | 0.0 (8) | 13.6 |
+| pays | ferme | 82.9 | 18.3 | 18.2 | – (0) | 12.9 |
+| etat_civil | ferme | 98.6 | 5.4 | 4.2 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 55.0 | 45.2 | 43.2 | – (0) | 0.7 |
+| venant_de | texte_court | 37.9 | 65.6 | 60.3 | – (0) | 0.0 |
+| religion | ferme | 97.1 | 2.8 | 2.8 | – (0) | 0.0 |
+| adresse | texte_long | 1.4 | 34.2 | 24.8 | – (0) | 0.0 |
+| categorie_medicale | ferme | 98.6 | 1.4 | 1.4 | – (0) | 0.0 |
+| date_entree | date | 85.7 | 10.3 | 10.2 | – (0) | 0.0 |
+| date_sortie | date | 75.7 | 34.6 | 32.2 | – (0) | 0.0 |
+| nb_journees | numerique | 91.4 | 11.4 | 4.6 | 100.0 (2) | 0.0 |
+| observations | texte_long | 23.6 | 14.7 | 11.0 | – (0) | 0.0 |
+
+## N2 — gemma3-12b
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 76.4 | 6.6 | 6.4 | – (0) | 0.0 |
+| nom | texte_court | 55.0 | 13.0 | 12.1 | – (0) | 0.0 |
+| prenoms | texte_court | 91.4 | 5.1 | 3.6 | – (0) | 0.0 |
+| profession | texte_court | 56.4 | 19.9 | 18.0 | – (0) | 0.0 |
+| date_naissance | date | 92.1 | 55.5 | 52.6 | 100.0 (1) | 0.0 |
+| lieu_naissance | texte_court | 56.4 | 16.2 | 13.5 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 77.9 | 23.7 | 17.1 | 0.0 (8) | 16.7 |
+| pays | ferme | 94.3 | 5.9 | 5.8 | – (0) | 1.4 |
+| etat_civil | ferme | 98.6 | 5.4 | 4.2 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 56.4 | 23.2 | 19.1 | – (0) | 0.0 |
+| venant_de | texte_court | 68.6 | 23.9 | 19.1 | – (0) | 0.0 |
+| religion | ferme | 97.9 | 2.1 | 1.9 | – (0) | 0.0 |
+| adresse | texte_long | 0.0 | 31.3 | 23.5 | – (0) | 0.0 |
+| categorie_medicale | ferme | 89.3 | 10.7 | 10.7 | – (0) | 0.0 |
+| date_entree | date | 92.9 | 10.0 | 10.0 | – (0) | 0.0 |
+| date_sortie | date | 84.3 | 31.1 | 30.7 | – (0) | 0.0 |
+| nb_journees | numerique | 93.6 | 3.0 | 2.7 | 0.0 (2) | 0.0 |
+| observations | texte_long | 4.3 | 21.9 | 16.9 | – (0) | 0.0 |
+
+## N2 — gemma3-12b-classif
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 76.4 | 6.6 | 6.4 | – (0) | 0.0 |
+| nom | texte_court | 55.0 | 13.0 | 12.1 | – (0) | 0.0 |
+| prenoms | texte_court | 91.4 | 5.1 | 3.6 | – (0) | 0.0 |
+| profession | texte_court | 56.4 | 19.9 | 18.0 | – (0) | 0.0 |
+| date_naissance | date | 92.1 | 55.5 | 52.6 | 100.0 (1) | 0.0 |
+| lieu_naissance | texte_court | 56.4 | 16.2 | 13.5 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 77.9 | 23.7 | 17.1 | 0.0 (8) | 16.7 |
+| pays | ferme | 94.3 | 5.9 | 5.8 | – (0) | 1.4 |
+| etat_civil | ferme | 98.6 | 5.4 | 4.2 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 56.4 | 23.2 | 19.1 | – (0) | 0.0 |
+| venant_de | texte_court | 68.6 | 23.9 | 19.1 | – (0) | 0.0 |
+| religion | ferme | 97.9 | 2.1 | 1.9 | – (0) | 0.0 |
+| adresse | texte_long | 0.0 | 31.3 | 23.5 | – (0) | 0.0 |
+| categorie_medicale | ferme | 94.3 | 5.7 | 5.7 | – (0) | 0.0 |
+| date_entree | date | 92.9 | 10.0 | 10.0 | – (0) | 0.0 |
+| date_sortie | date | 84.3 | 31.1 | 30.7 | – (0) | 0.0 |
+| nb_journees | numerique | 93.6 | 3.0 | 2.7 | 0.0 (2) | 0.0 |
+| observations | texte_long | 4.3 | 21.9 | 16.9 | – (0) | 0.0 |
+
+## N2 — gemma3-12b-ctx
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 75.7 | 8.2 | 7.9 | – (0) | 0.0 |
+| nom | texte_court | 55.7 | 13.9 | 13.6 | – (0) | 0.0 |
+| prenoms | texte_court | 84.3 | 9.5 | 8.5 | – (0) | 0.0 |
+| profession | texte_court | 47.9 | 24.9 | 22.9 | – (0) | 0.0 |
+| date_naissance | date | 89.3 | 77.7 | 62.4 | 100.0 (1) | 0.0 |
+| lieu_naissance | texte_court | 52.9 | 18.6 | 15.4 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 74.3 | 30.5 | 25.0 | 0.0 (8) | 17.4 |
+| pays | ferme | 93.6 | 7.1 | 7.0 | – (0) | 2.1 |
+| etat_civil | ferme | 94.3 | 9.0 | 7.8 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 60.0 | 25.4 | 21.3 | – (0) | 0.0 |
+| venant_de | texte_court | 64.3 | 30.0 | 25.8 | – (0) | 0.0 |
+| religion | ferme | 97.9 | 2.3 | 2.2 | – (0) | 0.0 |
+| adresse | texte_long | 0.7 | 34.7 | 27.1 | – (0) | 0.0 |
+| categorie_medicale | ferme | 88.6 | 11.4 | 11.4 | – (0) | 0.0 |
+| date_entree | date | 91.4 | 10.7 | 10.7 | – (0) | 0.0 |
+| date_sortie | date | 80.0 | 38.1 | 34.6 | – (0) | 0.0 |
+| nb_journees | numerique | 85.7 | 8.7 | 8.7 | 100.0 (2) | 0.0 |
+| observations | texte_long | 5.7 | 26.3 | 21.5 | – (0) | 0.0 |
+
+## N2 — qwen3-vl-8b
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 82.9 | 7.3 | 5.4 | – (0) | 0.0 |
+| nom | texte_court | 55.0 | 20.7 | 15.9 | – (0) | 0.0 |
+| prenoms | texte_court | 85.0 | 18.9 | 11.1 | – (0) | 0.0 |
+| profession | texte_court | 56.4 | 23.2 | 20.9 | – (0) | 0.0 |
+| date_naissance | date | 86.4 | 4.6 | 4.6 | 100.0 (1) | 0.7 |
+| lieu_naissance | texte_court | 60.7 | 17.9 | 16.6 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 76.4 | 23.5 | 22.2 | 0.0 (8) | 11.4 |
+| pays | ferme | 89.3 | 12.2 | 11.9 | – (0) | 9.3 |
+| etat_civil | ferme | 95.0 | 8.4 | 7.2 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 69.3 | 16.1 | 13.2 | – (0) | 0.0 |
+| venant_de | texte_court | 65.7 | 33.6 | 29.9 | – (0) | 0.0 |
+| religion | ferme | 99.3 | 0.7 | 0.7 | – (0) | 0.0 |
+| adresse | texte_long | 2.9 | 33.2 | 26.0 | – (0) | 0.0 |
+| categorie_medicale | ferme | 93.6 | 6.4 | 6.4 | – (0) | 0.0 |
+| date_entree | date | 87.1 | 11.7 | 11.5 | – (0) | 0.0 |
+| date_sortie | date | 77.1 | 38.1 | 34.0 | – (0) | 0.0 |
+| nb_journees | numerique | 82.9 | 16.3 | 11.7 | 0.0 (2) | 0.0 |
+| observations | texte_long | 13.6 | 20.0 | 16.4 | – (0) | 0.0 |
+
+## N2 — qwen3-vl-8b-classif
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 82.9 | 7.3 | 5.4 | – (0) | 0.0 |
+| nom | texte_court | 55.0 | 20.7 | 15.9 | – (0) | 0.0 |
+| prenoms | texte_court | 85.0 | 18.9 | 11.1 | – (0) | 0.0 |
+| profession | texte_court | 56.4 | 23.2 | 20.9 | – (0) | 0.0 |
+| date_naissance | date | 86.4 | 4.6 | 4.6 | 100.0 (1) | 0.7 |
+| lieu_naissance | texte_court | 60.7 | 17.9 | 16.6 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 76.4 | 23.5 | 22.2 | 0.0 (8) | 11.4 |
+| pays | ferme | 89.3 | 12.2 | 11.9 | – (0) | 9.3 |
+| etat_civil | ferme | 95.0 | 8.4 | 7.2 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 69.3 | 16.1 | 13.2 | – (0) | 0.0 |
+| venant_de | texte_court | 65.7 | 33.6 | 29.9 | – (0) | 0.0 |
+| religion | ferme | 99.3 | 0.7 | 0.7 | – (0) | 0.0 |
+| adresse | texte_long | 2.9 | 33.2 | 26.0 | – (0) | 0.0 |
+| categorie_medicale | ferme | 88.6 | 11.4 | 11.4 | – (0) | 0.0 |
+| date_entree | date | 87.1 | 11.7 | 11.5 | – (0) | 0.0 |
+| date_sortie | date | 77.1 | 38.1 | 34.0 | – (0) | 0.0 |
+| nb_journees | numerique | 82.9 | 16.3 | 11.7 | 0.0 (2) | 0.0 |
+| observations | texte_long | 13.6 | 20.0 | 16.4 | – (0) | 0.0 |
+
+## N2 — qwen3-vl-8b-ctx
+
+| Colonne | Type | Exact % | CER strict % | CER tolérant % | Invention % (n vides) | Omission % |
+|---|---|---|---|---|---|---|
+| numero | numerique | 78.6 | 8.2 | 6.4 | – (0) | 0.0 |
+| nom | texte_court | 56.4 | 16.0 | 15.0 | – (0) | 0.0 |
+| prenoms | texte_court | 87.9 | 11.0 | 9.1 | – (0) | 0.0 |
+| profession | texte_court | 59.3 | 21.5 | 18.9 | – (0) | 0.0 |
+| date_naissance | date | 86.4 | 4.5 | 4.5 | 100.0 (1) | 0.0 |
+| lieu_naissance | texte_court | 60.0 | 17.6 | 16.2 | 100.0 (1) | 0.0 |
+| departement_naissance | texte_court | 82.9 | 15.7 | 13.9 | 0.0 (8) | 5.3 |
+| pays | ferme | 95.0 | 6.1 | 6.0 | – (0) | 2.1 |
+| etat_civil | ferme | 95.7 | 4.8 | 3.6 | – (0) | 0.0 |
+| admis_au_titre_de | ferme | 69.3 | 20.8 | 17.4 | – (0) | 0.0 |
+| venant_de | texte_court | 62.1 | 35.5 | 31.7 | – (0) | 0.0 |
+| religion | ferme | 99.3 | 0.9 | 0.9 | – (0) | 0.7 |
+| adresse | texte_long | 2.9 | 32.7 | 25.3 | – (0) | 0.0 |
+| categorie_medicale | ferme | 87.9 | 12.1 | 12.1 | – (0) | 0.0 |
+| date_entree | date | 89.3 | 11.2 | 11.2 | – (0) | 0.0 |
+| date_sortie | date | 80.0 | 38.0 | 33.9 | – (0) | 0.0 |
+| nb_journees | numerique | 82.9 | 13.1 | 11.2 | 100.0 (2) | 0.0 |
+| observations | texte_long | 14.3 | 19.9 | 16.1 | – (0) | 0.0 |

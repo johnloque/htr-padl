@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Lance une stratégie sur plusieurs modèles, un seul chargé à la fois, puis l'évaluation.
 #   scripts/run_benchmark.sh N0 qwen3-vl-8b gemma3-12b churro-3b
+#   PROMPTS=configs/prompts/n2_v2 scripts/run_benchmark.sh N2 qwen3-vl-8b   # prompts alternatifs (N2)
 set -u
 cd "$(dirname "$0")/.."
 strategy=$1; shift
@@ -9,6 +10,6 @@ for model in "$@"; do
   # attend la fin d'un éventuel téléchargement (max 2 h)
   for _ in $(seq 1 240); do ollama show "$id" >/dev/null 2>&1 && break; sleep 30; done
   echo "=== $strategy / $model ($id) — $(date '+%H:%M:%S')"
-  uv run python -m htr.run --strategy "$strategy" --model "$model" || echo "!!! échec $model"
+  uv run python -m htr.run --strategy "$strategy" --model "$model" ${PROMPTS:+--prompts "$PROMPTS"} || echo "!!! échec $model"
 done
 uv run python -m eval.evaluate

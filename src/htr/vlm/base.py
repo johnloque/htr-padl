@@ -63,7 +63,10 @@ class VLMClient(abc.ABC):
         if cache_path and cache_path.exists():
             for line in cache_path.read_text(encoding="utf-8").splitlines():
                 if line.strip():
-                    rec = json.loads(line)
+                    try:
+                        rec = json.loads(line)
+                    except json.JSONDecodeError:  # dernière ligne tronquée par une interruption brutale
+                        continue
                     self._cache[rec["key"]] = rec
 
     # --- à implémenter par backend ---
